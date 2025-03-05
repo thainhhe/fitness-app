@@ -1,14 +1,14 @@
 {
   "users": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Người dùng 1",
       "email": "abc@gmail.com",
       "password": "123456",
       "verified": true
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Người dùng 2",
       "email": "user2@gmail.com",
       "password": "654321",
@@ -20,39 +20,47 @@
       "email": "acquynho2000@gmail.com",
       "password": "123456",
       "verified": true
+    },
+    {
+      "id": "83ba",
+      "name": "Thaiii",
+      "email": "nguyenthaigpt@gmail.com",
+      "password": "123456",
+      "verified": true,
+      "verificationCode": "340387"
     }
   ],
   "exercises": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Push-up",
       "description": "Bài tập chống đẩy cơ bản.",
       "image": "url_to_image",
       "video": "url_to_video"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Squat",
       "description": "Bài tập giúp tăng cường sức mạnh cơ chân.",
       "image": "url_to_image",
       "video": "url_to_video"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Plank",
       "description": "Bài tập giúp tăng cường cơ bụng và lưng.",
       "image": "url_to_image",
       "video": "url_to_video"
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Jumping Jacks",
       "description": "Bài tập giúp tăng nhịp tim và đốt cháy calo.",
       "image": "url_to_image",
       "video": "url_to_video"
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "Lunges",
       "description": "Bài tập giúp săn chắc cơ mông và đùi.",
       "image": "url_to_image",
@@ -61,7 +69,7 @@
   ],
   "workouts": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Full Body Workout",
       "exercises": [
         1,
@@ -70,7 +78,7 @@
       ]
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Leg Day",
       "exercises": [
         2,
@@ -78,7 +86,7 @@
       ]
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Cardio Blast",
       "exercises": [
         4,
@@ -88,17 +96,17 @@
   ],
   "mealPlans": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Chế độ ăn tăng cơ",
       "calories": 2500
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Chế độ ăn giảm cân",
       "calories": 1800
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Chế độ ăn duy trì cân nặng",
       "calories": 2200
     }

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { View, Text, TextInput, Button, StyleSheet } from "react-native";
+import { View, Text, TextInput, Button, StyleSheet, Alert } from "react-native";
 import api from "../api";
 
 const RegisterScreen = ({ navigation }) => {
@@ -7,13 +7,56 @@ const RegisterScreen = ({ navigation }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
+  const generateVerificationCode = () =>
+    Math.floor(100000 + Math.random() * 900000).toString();
+
   const register = async () => {
+    console.log("📌 Hàm register được gọi!");
+
+    // Gửi yêu cầu kiểm tra email tồn tại chưa
+    const { data: users } = await api.get("/users", { params: { email } });
+
+    if (users.length > 0) {
+      console.log("❌ Email đã tồn tại!");
+      Alert.alert("Email đã tồn tại!");
+      return;
+    }
+
+    const verificationCode = generateVerificationCode();
+    console.log(`🔢 Mã xác thực: ${verificationCode}`);
+
     try {
-      await api.post("/register", { name, email, password });
-      alert("Vui lòng kiểm tra email để xác nhận tài khoản");
-      navigation.navigate("Auth");
+      // Gửi email xác thực
+      const emailRes = await fetch(
+        "http://192.168.100.140:5001/send-verification",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ email, code: verificationCode }),
+        }
+      );
+
+      console.log("📨 Gửi email thành công:", await emailRes.text());
+
+      // Lưu user vào JSON Server
+      const saveRes = await api.post("/users", {
+        name,
+        email,
+        password,
+        verified: false,
+        verificationCode,
+      });
+
+      console.log("✅ Lưu user thành công:", saveRes.data);
+
+      Alert.alert(
+        "Đăng ký thành công!",
+        "Hãy kiểm tra email để nhập mã xác thực."
+      );
+      navigation.navigate("VerifyEmail", { email });
     } catch (error) {
-      alert(error.response?.data?.error || "Đã có lỗi xảy ra");
+      console.error("❌ Lỗi khi đăng ký:", error);
+      Alert.alert("Có lỗi xảy ra, vui lòng thử lại!");
     }
   };
 

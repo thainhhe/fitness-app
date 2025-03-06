@@ -27,7 +27,8 @@
       "email": "nguyenthaigpt@gmail.com",
       "password": "123456",
       "verified": true,
-      "verificationCode": "340387"
+      "verificationCode": "340387",
+      "resetCode": null
     }
   ],
   "exercises": [

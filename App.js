@@ -8,6 +8,9 @@ import VerifyEmailScreen from "./screens/VerifyEmailScreen";
 import RegisterScreen from "./screens/RegisterScreen";
 import ResetPasswordScreen from "./screens/ResetPasswordScreen";
 import ForgotPasswordScreen from "./screens/ForgotPasswordScreen";
+import WorkoutPlanScreen from "./screens/WorkoutPlanScreen";
+import CreateWorkoutScreen from "./screens/CreateWorkoutScreen";
+import WorkoutDetailScreen from "./screens/WorkoutDetailScreen";
 
 const Stack = createStackNavigator();
 
@@ -21,6 +24,9 @@ export default function App() {
         <Stack.Screen name="ResetPassword" component={ResetPasswordScreen} />
         <Stack.Screen name="ForgotPassword" component={ForgotPasswordScreen} />
         <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen name="WorkoutPlan" component={WorkoutPlanScreen} />
+        <Stack.Screen name="CreateWorkout" component={CreateWorkoutScreen} />
+        <Stack.Screen name="WorkoutDetail" component={WorkoutDetailScreen} />
         <Stack.Screen name="ExerciseDetail" component={ExerciseDetailScreen} />
       </Stack.Navigator>
     </NavigationContainer>

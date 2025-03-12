@@ -66,33 +66,61 @@
       "description": "Bài tập giúp săn chắc cơ mông và đùi.",
       "image": "url_to_image",
       "video": "url_to_video"
+    },
+    {
+      "id": "6",
+      "name": "Pull-up",
+      "description": "Bài tập kéo xà giúp phát triển cơ lưng và tay trước.",
+      "image": "url_to_image",
+      "video": "url_to_video"
+    },
+    {
+      "id": "7",
+      "name": "Deadlift",
+      "description": "Bài tập giúp phát triển toàn bộ cơ thể, đặc biệt là lưng và chân.",
+      "image": "url_to_image",
+      "video": "url_to_video"
+    },
+    {
+      "id": "8",
+      "name": "Bicep Curl",
+      "description": "Bài tập giúp tăng sức mạnh và kích thước cơ tay trước.",
+      "image": "url_to_image",
+      "video": "url_to_video"
+    },
+    {
+      "id": "9",
+      "name": "Shoulder Press",
+      "description": "Bài tập giúp phát triển cơ vai.",
+      "image": "url_to_image",
+      "video": "url_to_video"
+    },
+    {
+      "id": "10",
+      "name": "Leg Press",
+      "description": "Bài tập giúp phát triển cơ đùi và mông.",
+      "image": "url_to_image",
+      "video": "url_to_video"
     }
   ],
   "workouts": [
     {
       "id": "1",
+      "userId": "1",
       "name": "Full Body Workout",
-      "exercises": [
-        1,
-        2,
-        3
-      ]
+      "exercises": ["1", "2", "3"]
     },
     {
       "id": "2",
+      "userId": "1",
       "name": "Leg Day",
-      "exercises": [
-        2,
-        5
-      ]
+      "exercises": ["5", "3", "4", "2"]
     },
     {
       "id": "3",
+      "userId": "2",
       "name": "Cardio Blast",
-      "exercises": [
-        4,
-        1
-      ]
+      "exercises": ["4", "1", "3", "8"]
     }
   ],
   "mealPlans": [
@@ -110,6 +138,116 @@
       "id": "3",
       "name": "Chế độ ăn duy trì cân nặng",
       "calories": 2200
+    }
+  ],
+  "workoutPlans": [
+    {
+      "id": "1",
+      "name": "Chương trình tăng cơ",
+      "goal": "Tăng cơ",
+      "days": [
+        {
+          "day": 1,
+          "exercises": [
+            {
+              "id": "1",
+              "name": "Bench Press",
+              "image": "url_to_image"
+            },
+            {
+              "id": "2",
+              "name": "Squat",
+              "image": "url_to_image"
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "exercises": [
+            {
+              "id": "3",
+              "name": "Deadlift",
+              "image": "url_to_image"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Chương trình giảm cân",
+      "goal": "Giảm cân",
+      "days": [
+        {
+          "day": 1,
+          "exercises": [
+            {
+              "id": "4",
+              "name": "Jump Rope",
+              "image": "url_to_image"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Chương trình duy trì thể lực",
+      "goal": "Duy trì thể lực",
+      "days": [
+        {
+          "day": 1,
+          "exercises": [
+            {
+              "id": "1",
+              "name": "Push-up",
+              "image": "url_to_image"
+            },
+            {
+              "id": "6",
+              "name": "Pull-up",
+              "image": "url_to_image"
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "exercises": [
+            {
+              "id": "3",
+              "name": "Plank",
+              "image": "url_to_image"
+            },
+            {
+              "id": "7",
+              "name": "Deadlift",
+              "image": "url_to_image"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Chương trình chuyên vai và tay",
+      "goal": "Phát triển cơ vai và tay",
+      "days": [
+        {
+          "day": 1,
+          "exercises": [
+            {
+              "id": "8",
+              "name": "Bicep Curl",
+              "image": "url_to_image"
+            },
+            {
+              "id": "9",
+              "name": "Shoulder Press",
+              "image": "url_to_image"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

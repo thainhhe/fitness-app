@@ -36,71 +36,259 @@
       "id": "1",
       "name": "Push-up",
       "description": "Bài tập chống đẩy cơ bản.",
-      "image": "url_to_image",
-      "video": "url_to_video"
+      "image": "https://th.bing.com/th?q=Push-Up+Clip+Art&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.3&pid=InlineBlock&mkt=en-WW&cc=VN&setlang=en&adlt=moderate&t=1&mw=247",
+      "video": "url_to_video",
+      "instructions": [
+        "Nằm úp xuống sàn với hai tay đặt ngang vai, lòng bàn tay chống đất.",
+        "Giữ thẳng cơ thể từ đầu đến chân, không để lưng cong hoặc mông cao.",
+        "Hạ thấp cơ thể bằng cách gập khuỷu tay, đưa ngực gần chạm đất.",
+        "Đẩy ngược cơ thể lên vị trí ban đầu bằng cách duỗi thẳng khuỷu tay.",
+        "Hít vào khi hạ xuống và thở ra khi đẩy lên."
+      ],
+      "reps_sets": {
+        "beginner": "3 set x 8–12 reps",
+        "intermediate": "3–4 set x 15–20 reps",
+        "advanced": "4–5 set x 20+ reps hoặc biến thể khó hơn (diamond push-up, clap push-up)"
+      }
     },
     {
       "id": "2",
       "name": "Squat",
       "description": "Bài tập giúp tăng cường sức mạnh cơ chân.",
-      "image": "url_to_image",
-      "video": "url_to_video"
+      "image": "https://th.bing.com/th?q=Squats+Exercise+Drawing&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.3&pid=InlineBlock&mkt=en-WW&cc=VN&setlang=en&adlt=moderate&t=1&mw=247",
+      "video": "url_to_video",
+      "instructions": [
+        "Đứng thẳng, hai chân rộng bằng vai, mũi chân hơi hướng ra ngoài.",
+        "Hạ người xuống bằng cách đẩy hông về sau, giữ lưng thẳng.",
+        "Hạ xuống đến khi đùi song song với mặt đất, đầu gối không vượt quá mũi chân.",
+        "Đẩy người lên về vị trí ban đầu.",
+        "Hít vào khi hạ xuống, thở ra khi đứng lên."
+      ],
+      "reps_sets": {
+        "beginner": "3 set x 10–12 reps",
+        "intermediate": "3–4 set x 15 reps",
+        "advanced": "4–5 set x 20+ reps hoặc dùng tạ (barbell squat, goblet squat)"
+      }
     },
     {
       "id": "3",
       "name": "Plank",
       "description": "Bài tập giúp tăng cường cơ bụng và lưng.",
-      "image": "url_to_image",
-      "video": "url_to_video"
+      "image": "https://th.bing.com/th/id/OIP.-QVjNIMZtFVNGJLW1HrzaAHaFP?w=262&h=185&c=7&r=0&o=5&dpr=1.3&pid=1.7",
+      "video": "url_to_video",
+      "instructions": [
+        "Bắt đầu với tư thế chống đẩy nhưng khuỷu tay chống xuống sàn.",
+        "Giữ cơ thể thẳng từ đầu đến chân, không để lưng cong hoặc mông cao.",
+        "Giữ nguyên tư thế trong thời gian tối đa có thể.",
+        "Hít thở đều trong suốt bài tập."
+      ],
+      "reps_sets": {
+        "beginner": "3 set x 20–30 giây",
+        "intermediate": "3 set x 45–60 giây",
+        "advanced": "3–4 set x 90+ giây hoặc plank biến thể (side plank, weighted plank)"
+      }
     },
     {
       "id": "4",
       "name": "Jumping Jacks",
       "description": "Bài tập giúp tăng nhịp tim và đốt cháy calo.",
-      "image": "url_to_image",
-      "video": "url_to_video"
+      "image": "https://th.bing.com/th/id/OIP.mSMd7U5m0M66vRGqtB_3hQHaHb?w=193&h=194&c=7&r=0&o=5&dpr=1.3&pid=1.7",
+      "video": "url_to_video",
+      "instructions": [
+        "Đứng thẳng, hai chân khép lại, tay để dọc theo cơ thể.",
+        "Nhảy lên, đồng thời dang hai chân rộng hơn vai và đưa tay lên cao chạm nhau qua đầu.",
+        "Nhảy tiếp để quay về vị trí bắt đầu với hai chân khép lại và tay hạ xuống.",
+        "Thở đều, hít vào khi nhảy lên và thở ra khi quay về vị trí ban đầu."
+      ],
+      "reps_sets": {
+        "beginner": "3 set x 20–30 reps",
+        "intermediate": "3–4 set x 40–60 reps",
+        "advanced": "4–5 set x 60–100 reps hoặc thực hiện liên tục trong 1–2 phút"
+      }
     },
     {
       "id": "5",
       "name": "Lunges",
       "description": "Bài tập giúp săn chắc cơ mông và đùi.",
-      "image": "url_to_image",
-      "video": "url_to_video"
+      "image": "https://th.bing.com/th/id/OIP.kIVaLBGYxEG5UVC_0vQEGAHaEK?w=281&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7",
+      "video": "url_to_video",
+      "instructions": [
+        "Đứng thẳng, hai chân rộng bằng hông, tay để dọc hai bên cơ thể hoặc đặt lên hông.",
+        "Bước một chân về phía trước, hạ thấp cơ thể sao cho đầu gối chân trước tạo góc 90 độ, không vượt quá mũi chân, và đầu gối chân sau gần chạm đất.",
+        "Đẩy người lên và đưa chân trước trở về vị trí ban đầu.",
+        "Lặp lại động tác với chân còn lại."
+      ],
+      "reps_sets": {
+        "beginner": "3 set x 8–10 reps mỗi chân",
+        "intermediate": "3–4 set x 12–15 reps mỗi chân",
+        "advanced": "4–5 set x 15–20 reps mỗi chân hoặc thực hiện lunges với tạ"
+      }
     },
     {
       "id": "6",
       "name": "Pull-up",
       "description": "Bài tập kéo xà giúp phát triển cơ lưng và tay trước.",
-      "image": "url_to_image",
-      "video": "url_to_video"
+      "image": "https://th.bing.com/th/id/OIP.Z4F9N6Z5Y402MT9Cv7ETywHaEK?w=329&h=185&c=7&r=0&o=5&dpr=1.3&pid=1.7",
+      "video": "url_to_video",
+      "instructions": [
+        "Bắt đầu với tư thế treo người trên xà, lòng bàn tay hướng ra ngoài và tay rộng hơn vai.",
+        "Kéo cơ thể lên bằng cách gập khuỷu tay, đưa cằm qua thanh xà.",
+        "Từ từ hạ cơ thể xuống vị trí ban đầu, giữ tay thẳng.",
+        "Lặp lại động tác với nhịp độ đều."
+      ],
+      "reps_sets": {
+        "beginner": "3 set x 3–5 reps (hoặc sử dụng dây hỗ trợ để dễ dàng hơn)",
+        "intermediate": "3–4 set x 6–10 reps",
+        "advanced": "4–5 set x 10–15 reps hoặc thêm trọng lượng bằng dây tập tạ"
+      }
     },
     {
       "id": "7",
       "name": "Deadlift",
       "description": "Bài tập giúp phát triển toàn bộ cơ thể, đặc biệt là lưng và chân.",
-      "image": "url_to_image",
-      "video": "url_to_video"
+      "image": "https://th.bing.com/th/id/OIP.UhjegFXFKAUZaF67fxMIPQHaHQ?w=178&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7",
+      "video": "url_to_video",
+      "instructions": [
+        "Đứng thẳng, hai chân rộng bằng vai, tay cầm thanh tạ với lòng bàn tay hướng xuống hoặc nắm xen kẽ.",
+        "Hạ người xuống bằng cách đẩy hông về sau, giữ lưng thẳng và đầu gối hơi gập.",
+        "Nâng thanh tạ lên bằng cách đẩy hông về phía trước, đứng thẳng người.",
+        "Hạ thanh tạ từ từ về vị trí ban đầu, kiểm soát động tác."
+      ],
+      "reps_sets": {
+        "beginner": "3 set x 8–10 reps (với trọng lượng nhẹ hoặc tạ đơn)",
+        "intermediate": "3–4 set x 10–12 reps (với trọng lượng vừa phải)",
+        "advanced": "4–5 set x 6–8 reps (với trọng lượng nặng hơn, tối đa 80–90% trọng lượng cơ thể)"
+      }
     },
     {
       "id": "8",
       "name": "Bicep Curl",
       "description": "Bài tập giúp tăng sức mạnh và kích thước cơ tay trước.",
-      "image": "url_to_image",
-      "video": "url_to_video"
+      "image": "https://th.bing.com/th/id/OIP.nYUmkBsUr1yCtqjblKyOAwHaGg?w=211&h=186&c=7&r=0&o=5&dpr=1.3&pid=1.7",
+      "video": "url_to_video",
+      "instructions": [
+        "Đứng thẳng, hai chân rộng bằng vai, tay cầm tạ đơn hoặc thanh tạ, lòng bàn tay hướng lên.",
+        "Giữ cánh tay cố định, gập khuỷu tay để nâng tạ lên ngang vai.",
+        "Từ từ hạ tạ xuống vị trí ban đầu, kiểm soát chuyển động.",
+        "Lặp lại động tác với nhịp độ đều, không để thân trên nghiêng ngả."
+      ],
+      "reps_sets": {
+        "beginner": "3 set x 8–10 reps (với trọng lượng nhẹ)",
+        "intermediate": "3–4 set x 10–12 reps (với trọng lượng vừa phải)",
+        "advanced": "4–5 set x 6–8 reps (với trọng lượng nặng hơn để tối ưu hóa phát triển cơ bắp)"
+      }
     },
     {
       "id": "9",
       "name": "Shoulder Press",
       "description": "Bài tập giúp phát triển cơ vai.",
-      "image": "url_to_image",
-      "video": "url_to_video"
+      "image": "https://th.bing.com/th/id/OIP.5DWtDn0I7oHNUnBTO1k0xwHaFj?w=220&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7",
+      "video": "url_to_video",
+      "instructions": [
+        "Đứng thẳng hoặc ngồi trên ghế với tựa lưng, tay cầm tạ đơn hoặc thanh tạ ngang vai, lòng bàn tay hướng về phía trước.",
+        "Nâng tạ thẳng lên trên đầu, duỗi thẳng tay nhưng không khóa khớp khuỷu tay.",
+        "Hạ tạ từ từ về vị trí ban đầu, giữ kiểm soát động tác.",
+        "Lặp lại động tác với nhịp độ đều, đảm bảo giữ lưng thẳng và cơ trung tâm được siết chặt."
+      ],
+      "reps_sets": {
+        "beginner": "3 set x 8–10 reps (với trọng lượng nhẹ)",
+        "intermediate": "3–4 set x 10–12 reps (với trọng lượng vừa phải)",
+        "advanced": "4–5 set x 6–8 reps (với trọng lượng nặng hơn)"
+      }
     },
     {
       "id": "10",
       "name": "Leg Press",
       "description": "Bài tập giúp phát triển cơ đùi và mông.",
-      "image": "url_to_image",
-      "video": "url_to_video"
+      "image": "https://th.bing.com/th/id/OIP._wrWId4J5r4HYuDQ4ZAGawHaH_?w=170&h=184&c=7&r=0&o=5&dpr=1.3&pid=1.7",
+      "video": "url_to_video",
+      "instructions": [
+        "Ngồi lên máy Leg Press, đặt chân lên bảng đạp với khoảng cách ngang vai, giữ lưng thẳng và áp sát vào ghế.",
+        "Đẩy bảng đạp lên bằng chân đến khi chân gần duỗi thẳng nhưng không khóa khớp gối.",
+        "Từ từ hạ bảng đạp xuống bằng cách gập đầu gối, giữ kiểm soát động tác.",
+        "Lặp lại động tác, đảm bảo giữ nhịp thở đều và đúng kỹ thuật."
+      ],
+      "reps_sets": {
+        "beginner": "3 set x 10–12 reps (với trọng lượng vừa phải)",
+        "intermediate": "3–4 set x 12–15 reps (với trọng lượng nặng hơn)",
+        "advanced": "4–5 set x 8–12 reps (với trọng lượng tối đa cho phép mà vẫn đảm bảo kỹ thuật)"
+      }
+    },
+    {
+      "id": "11",
+      "name": "Dumbbell Fly",
+      "description": "Bài tập phát triển cơ ngực với tạ đơn.",
+      "image": "https://th.bing.com/th/id/OIP.DBg7-kiFq5JljIEuKpPmkAHaEU?w=287&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7",
+      "video": "url_to_video",
+      "instructions": [
+        "Nằm trên ghế phẳng, tay cầm tạ đơn, lòng bàn tay hướng vào nhau, tạ nằm phía trên ngực.",
+        "Hạ tay từ từ sang hai bên, giữ khuỷu tay hơi cong để bảo vệ khớp.",
+        "Khi cánh tay gần song song với sàn, ngừng lại một giây, sau đó thu tay về vị trí ban đầu bằng cách siết chặt cơ ngực.",
+        "Lặp lại động tác với nhịp độ chậm và kiểm soát để tối ưu hóa hiệu quả."
+      ],
+      "reps_sets": {
+        "beginner": "3 set x 8–10 reps (với trọng lượng nhẹ)",
+        "intermediate": "3–4 set x 10–12 reps (với trọng lượng vừa phải)",
+        "advanced": "4–5 set x 6–8 reps (với trọng lượng nặng hơn để thử thách cơ ngực)"
+      }
+    },
+    {
+      "id": "12",
+      "name": "Triceps Dips",
+      "description": "Bài tập giúp phát triển cơ tay sau.",
+      "image": "https://ts2.mm.bing.net/th?id=OIP.N35o8Hgg6Hcci0_OzI5zGwHaHa&pid=15.1",
+      "video": "url_to_video",
+      "instructions": [
+        "Ngồi trên mép ghế hoặc băng tập, tay đặt sát hông và giữ chặt mép ghế.",
+        "Dịch mông ra khỏi ghế, hai tay chịu lực, chân duỗi thẳng hoặc gập đầu gối tùy theo cấp độ.",
+        "Hạ cơ thể từ từ bằng cách gập khuỷu tay cho đến khi cánh tay tạo góc 90 độ.",
+        "Đẩy người lên trở lại vị trí ban đầu bằng cách duỗi thẳng tay, siết chặt cơ tay sau.",
+        "Lặp lại động tác và duy trì nhịp thở đều."
+      ],
+      "reps_sets": {
+        "beginner": "3 set x 8–10 reps (với chân gập để giảm áp lực)",
+        "intermediate": "3–4 set x 10–12 reps (với chân duỗi thẳng)",
+        "advanced": "4–5 set x 12–15 reps hoặc sử dụng tạ trên đùi để tăng độ khó"
+      }
+    },
+    {
+      "id": "13",
+      "name": "Russian Twist",
+      "description": "Bài tập giúp tăng cường cơ bụng xiên.",
+      "image": "https://th.bing.com/th/id/OIP.qpK8yMRGzix06zdOIuvS0gHaHa?w=196&h=196&c=7&r=0&o=5&dpr=1.3&pid=1.7",
+      "video": "url_to_video",
+      "instructions": [
+        "Ngồi trên sàn, đầu gối gập, hai gót chân chạm đất hoặc nhấc lên để tăng độ khó.",
+        "Ngả người về phía sau một góc khoảng 45 độ, giữ lưng thẳng và siết cơ bụng.",
+        "Cầm một quả tạ hoặc bóng tập, xoay thân trên sang bên phải, sau đó quay trở lại trung tâm.",
+        "Tiếp tục xoay sang bên trái, đảm bảo kiểm soát chuyển động.",
+        "Lặp lại động tác luân phiên giữa hai bên."
+      ],
+      "reps_sets": {
+        "beginner": "3 set x 10–12 reps mỗi bên (không cần tạ)",
+        "intermediate": "3–4 set x 12–15 reps mỗi bên (sử dụng tạ nhẹ)",
+        "advanced": "4–5 set x 15–20 reps mỗi bên (sử dụng tạ nặng hoặc bóng medicine ball)"
+      }
+    },
+    {
+      "id": "14",
+      "name": "Burpees",
+      "description": "Bài tập toàn thân giúp đốt mỡ hiệu quả.",
+      "image": "https://th.bing.com/th/id/OIP.ik5bq-K10zhPomWv9ZnyJAHaEC?w=297&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7",
+      "video": "url_to_video",
+      "instructions": [
+        "Đứng thẳng, hai chân rộng bằng vai, tay để dọc hai bên cơ thể.",
+        "Hạ người xuống tư thế squat, đặt hai tay xuống sàn phía trước.",
+        "Nhảy hai chân ra sau để vào tư thế plank, giữ cơ thể thẳng từ đầu đến chân.",
+        "Thực hiện một động tác hít đất (tùy chọn, có thể bỏ qua nếu bạn mới bắt đầu).",
+        "Nhảy hai chân trở lại tư thế squat.",
+        "Nhảy bật lên cao, tay hướng lên trời, sau đó tiếp đất nhẹ nhàng và lặp lại động tác."
+      ],
+      "reps_sets": {
+        "beginner": "3 set x 8–10 reps",
+        "intermediate": "3–4 set x 12–15 reps",
+        "advanced": "4–5 set x 15–20 reps hoặc thực hiện liên tục trong 1–2 phút"
+      }
     }
   ],
   "workouts": [
@@ -148,28 +336,15 @@
       "days": [
         {
           "day": 1,
-          "exercises": [
-            {
-              "id": "1",
-              "name": "Bench Press",
-              "image": "url_to_image"
-            },
-            {
-              "id": "2",
-              "name": "Squat",
-              "image": "url_to_image"
-            }
-          ]
+          "exercises": ["1", "2", "11"]
         },
         {
           "day": 2,
-          "exercises": [
-            {
-              "id": "3",
-              "name": "Deadlift",
-              "image": "url_to_image"
-            }
-          ]
+          "exercises": ["7", "6"]
+        },
+        {
+          "day": 3,
+          "exercises": ["8", "9", "12"]
         }
       ]
     },
@@ -180,13 +355,11 @@
       "days": [
         {
           "day": 1,
-          "exercises": [
-            {
-              "id": "4",
-              "name": "Jump Rope",
-              "image": "url_to_image"
-            }
-          ]
+          "exercises": ["4", "5", "14"]
+        },
+        {
+          "day": 2,
+          "exercises": ["13", "3", "6"]
         }
       ]
     },
@@ -197,33 +370,11 @@
       "days": [
         {
           "day": 1,
-          "exercises": [
-            {
-              "id": "1",
-              "name": "Push-up",
-              "image": "url_to_image"
-            },
-            {
-              "id": "6",
-              "name": "Pull-up",
-              "image": "url_to_image"
-            }
-          ]
+          "exercises": ["1", "6", "9"]
         },
         {
           "day": 2,
-          "exercises": [
-            {
-              "id": "3",
-              "name": "Plank",
-              "image": "url_to_image"
-            },
-            {
-              "id": "7",
-              "name": "Deadlift",
-              "image": "url_to_image"
-            }
-          ]
+          "exercises": ["3", "7", "13"]
         }
       ]
     },
@@ -234,18 +385,22 @@
       "days": [
         {
           "day": 1,
-          "exercises": [
-            {
-              "id": "8",
-              "name": "Bicep Curl",
-              "image": "url_to_image"
-            },
-            {
-              "id": "9",
-              "name": "Shoulder Press",
-              "image": "url_to_image"
-            }
-          ]
+          "exercises": ["8", "9", "12"]
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Chương trình toàn thân",
+      "goal": "Tăng sức mạnh tổng thể",
+      "days": [
+        {
+          "day": 1,
+          "exercises": ["1", "4", "7", "11"]
+        },
+        {
+          "day": 2,
+          "exercises": ["5", "9", "12", "13"]
         }
       ]
     }

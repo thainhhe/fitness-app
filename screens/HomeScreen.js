@@ -8,13 +8,20 @@ import {
   StyleSheet,
   ScrollView,
 } from "react-native";
+import AsyncStorage from "@react-native-async-storage/async-storage";
 import api from "../api";
 
 const HomeScreen = ({ navigation }) => {
   const [exercises, setExercises] = useState([]);
   const [workouts, setWorkouts] = useState([]);
+  const [user, setUser] = useState(null);
 
   useEffect(() => {
+    // Lấy thông tin user đã đăng nhập
+    AsyncStorage.getItem("user").then((userData) => {
+      if (userData) setUser(JSON.parse(userData));
+    });
+
     api.get("/exercises").then((res) => setExercises(res.data));
     api.get("/workouts").then((res) => setWorkouts(res.data));
   }, []);
@@ -22,15 +29,33 @@ const HomeScreen = ({ navigation }) => {
   return (
     <ScrollView style={styles.container}>
       {/* Header */}
-      <Text style={styles.header}>Chào mừng bạn đến với Fitness Online</Text>
+      <Text style={styles.header}>
+        Chào mừng {user?.name} đến với Fitness Online
+      </Text>
 
       {/* Tiến trình cá nhân */}
       <View style={styles.progressContainer}>
         <Text style={styles.sectionTitle}>Tiến trình của bạn</Text>
-        <Text style={styles.progressText}>Buổi tập đã hoàn thành: 5/10</Text>
-        <Text style={styles.progressText}>
-          Mục tiêu: Giảm 3kg trong 1 tháng
-        </Text>
+        <TouchableOpacity
+          style={styles.progressButton}
+          onPress={() => navigation.navigate("Progress", { userId: user?.id })}
+        >
+          <Text style={styles.progressButtonText}>Xem Tiến Trình</Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          style={styles.progressButton}
+          onPress={() =>
+            navigation.navigate("AddProgress", { userId: user?.id })
+          }
+        >
+          <Text style={styles.progressButtonText}>Thêm Tiến Trình</Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          style={styles.progressButton}
+          onPress={() => navigation.navigate("WorkoutHistory")}
+        >
+          <Text style={styles.progressButtonText}>Lịch sử luyện tập</Text>
+        </TouchableOpacity>
       </View>
 
       {/* Chương trình tập luyện */}
@@ -152,6 +177,18 @@ const styles = StyleSheet.create({
     marginTop: 20,
   },
   workoutButtonText: {
+    color: "#fff",
+    fontSize: 16,
+    fontWeight: "bold",
+  },
+  progressButton: {
+    backgroundColor: "#007bff",
+    padding: 10,
+    borderRadius: 8,
+    marginTop: 10,
+    alignItems: "center",
+  },
+  progressButtonText: {
     color: "#fff",
     fontSize: 16,
     fontWeight: "bold",

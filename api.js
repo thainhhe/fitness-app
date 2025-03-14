@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://192.168.100.140:3001";
+const API_URL = "http://10.33.43.227:3001";
 
 // 192.168.1.4 nhà
 // 192.168.100.140 trọ

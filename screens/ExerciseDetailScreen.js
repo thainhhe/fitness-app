@@ -6,10 +6,11 @@ import {
   ActivityIndicator,
   ScrollView,
   StyleSheet,
+  TouchableOpacity,
 } from "react-native";
 import api from "../api";
 
-const ExerciseDetailScreen = ({ route }) => {
+const ExerciseDetailScreen = ({ route, navigation }) => {
   const { id } = route.params || {};
   const [exercise, setExercise] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -39,26 +40,21 @@ const ExerciseDetailScreen = ({ route }) => {
   }, [id]);
 
   if (loading) return <ActivityIndicator size="large" color="blue" />;
-
   if (!exercise)
     return <Text style={styles.errorText}>Không tìm thấy bài tập!</Text>;
 
   return (
     <ScrollView style={styles.container}>
-      {/* Tiêu đề bài tập */}
       <Text style={styles.title}>{exercise.name}</Text>
 
-      {/* Hình ảnh bài tập */}
       {exercise.image ? (
         <Image source={{ uri: exercise.image }} style={styles.image} />
       ) : (
         <Text style={styles.noImageText}>Không có hình ảnh</Text>
       )}
 
-      {/* Mô tả bài tập */}
       <Text style={styles.description}>{exercise.description}</Text>
 
-      {/* Hướng dẫn thực hiện */}
       {exercise.instructions?.length > 0 && (
         <>
           <Text style={styles.subTitle}>Cách thực hiện:</Text>
@@ -70,7 +66,6 @@ const ExerciseDetailScreen = ({ route }) => {
         </>
       )}
 
-      {/* Số rep/set gợi ý */}
       {exercise.reps_sets && (
         <>
           <Text style={styles.subTitle}>Số rep/set gợi ý:</Text>
@@ -86,6 +81,19 @@ const ExerciseDetailScreen = ({ route }) => {
           </Text>
         </>
       )}
+
+      {/* 🔹 Nút Hoàn thành buổi tập */}
+      <TouchableOpacity
+        style={styles.completeButton}
+        onPress={() =>
+          navigation.navigate("WorkoutCompletion", {
+            workoutName: exercise.name,
+            exercises: [exercise], // Chuyển bài tập hiện tại thành danh sách
+          })
+        }
+      >
+        <Text style={styles.buttonText}>Hoàn thành buổi tập</Text>
+      </TouchableOpacity>
     </ScrollView>
   );
 };
@@ -139,6 +147,18 @@ const styles = StyleSheet.create({
     color: "red",
     textAlign: "center",
     marginTop: 20,
+  },
+  completeButton: {
+    backgroundColor: "#28a745",
+    padding: 15,
+    borderRadius: 10,
+    marginTop: 20,
+    alignItems: "center",
+  },
+  buttonText: {
+    color: "#fff",
+    fontSize: 18,
+    fontWeight: "bold",
   },
 });
 

@@ -509,7 +509,7 @@
         },
         {
           "id": "2",
-          "completed": false,
+          "completed": true,
           "note": ""
         },
         {
@@ -542,6 +542,29 @@
         },
         {
           "id": "5",
+          "completed": true,
+          "note": ""
+        },
+        {
+          "id": "6",
+          "completed": true,
+          "note": "Yeahh"
+        }
+      ]
+    },
+    {
+      "id": "4a70",
+      "userId": "1",
+      "date": "2025-03-15",
+      "workoutName": "Squat",
+      "exercises": [
+        {
+          "id": "2",
+          "completed": true,
+          "note": ""
+        },
+        {
+          "id": "4",
           "completed": true,
           "note": ""
         }

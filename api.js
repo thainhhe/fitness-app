@@ -1,12 +1,8 @@
 import axios from "axios";
-
-const API_URL = "http://10.33.43.227:3001";
-
-// 192.168.1.4 nhà
-// 192.168.100.140 trọ
+import { API_URL } from "./config";
 
 const api = axios.create({
-  baseURL: API_URL, // Sử dụng API_URL chuẩn
+  baseURL: API_URL,
 });
 
 export default api;

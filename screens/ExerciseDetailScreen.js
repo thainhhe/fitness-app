@@ -1,8 +1,16 @@
 import React, { useEffect, useState } from "react";
-import { View, Text, Image, ActivityIndicator } from "react-native";
+import {
+  View,
+  Text,
+  Image,
+  ActivityIndicator,
+  ScrollView,
+  StyleSheet,
+  TouchableOpacity,
+} from "react-native";
 import api from "../api";
 
-const ExerciseDetailScreen = ({ route }) => {
+const ExerciseDetailScreen = ({ route, navigation }) => {
   const { id } = route.params || {};
   const [exercise, setExercise] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -15,18 +23,14 @@ const ExerciseDetailScreen = ({ route }) => {
 
     console.log(
       "Gọi API với URL:",
-      `http://192.168.100.140:3001/exercises?id=${id}`
+      `http://192.168.100.140:3001/exercises/${id}`
     );
 
     api
-      .get(`/exercises`, { params: { id } }) // Lọc bằng query thay vì ID trực tiếp
+      .get(`/exercises/${id}`)
       .then((res) => {
-        if (res.data.length > 0) {
-          console.log("Dữ liệu trả về:", res.data[0]);
-          setExercise(res.data[0]); // Lấy phần tử đầu tiên
-        } else {
-          console.log("Không tìm thấy bài tập!");
-        }
+        console.log("Dữ liệu trả về:", res.data);
+        setExercise(res.data);
         setLoading(false);
       })
       .catch((error) => {
@@ -36,23 +40,126 @@ const ExerciseDetailScreen = ({ route }) => {
   }, [id]);
 
   if (loading) return <ActivityIndicator size="large" color="blue" />;
-
-  if (!exercise) return <Text>Không tìm thấy bài tập!</Text>;
+  if (!exercise)
+    return <Text style={styles.errorText}>Không tìm thấy bài tập!</Text>;
 
   return (
-    <View>
-      <Text>{exercise.name}</Text>
-      <Text>{exercise.description}</Text>
+    <ScrollView style={styles.container}>
+      <Text style={styles.title}>{exercise.name}</Text>
+
       {exercise.image ? (
-        <Image
-          source={{ uri: exercise.image }}
-          style={{ width: 200, height: 200 }}
-        />
+        <Image source={{ uri: exercise.image }} style={styles.image} />
       ) : (
-        <Text>Không có hình ảnh</Text>
+        <Text style={styles.noImageText}>Không có hình ảnh</Text>
       )}
-    </View>
+
+      <Text style={styles.description}>{exercise.description}</Text>
+
+      {exercise.instructions?.length > 0 && (
+        <>
+          <Text style={styles.subTitle}>Cách thực hiện:</Text>
+          {exercise.instructions.map((step, index) => (
+            <Text key={index} style={styles.instructionItem}>
+              {`\u2022 ${step}`}
+            </Text>
+          ))}
+        </>
+      )}
+
+      {exercise.reps_sets && (
+        <>
+          <Text style={styles.subTitle}>Số rep/set gợi ý:</Text>
+          <Text style={styles.repSetText}>
+            🔰 Người mới: {exercise.reps_sets?.beginner || "Không có dữ liệu"}
+          </Text>
+          <Text style={styles.repSetText}>
+            ⚡ Trung bình:{" "}
+            {exercise.reps_sets?.intermediate || "Không có dữ liệu"}
+          </Text>
+          <Text style={styles.repSetText}>
+            🔥 Nâng cao: {exercise.reps_sets?.advanced || "Không có dữ liệu"}
+          </Text>
+        </>
+      )}
+
+      {/* 🔹 Nút Hoàn thành buổi tập */}
+      <TouchableOpacity
+        style={styles.completeButton}
+        onPress={() =>
+          navigation.navigate("WorkoutCompletion", {
+            workoutName: exercise.name,
+            exercises: [exercise], // Chuyển bài tập hiện tại thành danh sách
+          })
+        }
+      >
+        <Text style={styles.buttonText}>Hoàn thành buổi tập</Text>
+      </TouchableOpacity>
+    </ScrollView>
   );
 };
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    padding: 20,
+    backgroundColor: "#f8f9fa",
+  },
+  title: {
+    fontSize: 24,
+    fontWeight: "bold",
+    marginBottom: 10,
+    textAlign: "center",
+  },
+  image: {
+    width: "100%",
+    aspectRatio: 16 / 9,
+    borderRadius: 10,
+    marginBottom: 15,
+    resizeMode: "contain",
+  },
+  noImageText: {
+    fontSize: 16,
+    textAlign: "center",
+    color: "#999",
+  },
+  description: {
+    fontSize: 16,
+    marginBottom: 15,
+    textAlign: "justify",
+  },
+  subTitle: {
+    fontSize: 18,
+    fontWeight: "bold",
+    marginBottom: 10,
+  },
+  instructionItem: {
+    fontSize: 16,
+    marginBottom: 5,
+    paddingLeft: 10,
+  },
+  repSetText: {
+    fontSize: 16,
+    marginBottom: 5,
+    paddingLeft: 10,
+  },
+  errorText: {
+    fontSize: 18,
+    color: "red",
+    textAlign: "center",
+    marginTop: 20,
+  },
+  completeButton: {
+    backgroundColor: "#28a745",
+    padding: 15,
+    borderRadius: 10,
+    marginTop: 20,
+    alignItems: "center",
+  },
+  buttonText: {
+    color: "#fff",
+    fontSize: 18,
+    fontWeight: "bold",
+  },
+});
 
 export default ExerciseDetailScreen;

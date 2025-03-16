@@ -48,34 +48,63 @@ const ProgressScreen = ({ route }) => {
     return <Text style={styles.noData}>Chưa có dữ liệu tiến trình</Text>;
 
   return (
-    <ScrollView style={styles.container}>
-      <Text style={styles.title}>Tiến trình cá nhân</Text>
-      <LineChart
-        data={{
-          labels: progressData.map((entry) => entry.date),
-          datasets: [{ data: progressData.map((entry) => entry.weight) }],
-        }}
-        width={350}
-        height={220}
-        chartConfig={{
-          backgroundColor: "#1e90ff",
-          backgroundGradientFrom: "#1e90ff",
-          backgroundGradientTo: "#87cefa",
-          decimalPlaces: 1,
-          color: (opacity = 1) => `rgba(255, 255, 255, ${opacity})`,
-          labelColor: (opacity = 1) => `rgba(255, 255, 255, ${opacity})`,
-        }}
-        style={styles.chart}
-      />
-    </ScrollView>
+    <View style={styles.container}>
+      <ScrollView contentContainerStyle={styles.scrollContainer}>
+        <Text style={styles.title}>Tiến trình cá nhân</Text>
+
+        {/* 🔹 Biểu đồ Cân nặng */}
+        <Text style={styles.chartTitle}>Cân nặng theo ngày (kg)</Text>
+        <LineChart
+          data={{
+            labels: progressData.map((entry) => entry.date),
+            datasets: [{ data: progressData.map((entry) => entry.weight) }],
+          }}
+          width={350}
+          height={200}
+          chartConfig={chartConfig}
+          style={styles.chart}
+        />
+
+        {/* 🔹 Danh sách các chỉ số tiến trình */}
+        <Text style={styles.listTitle}>Chi tiết tiến trình</Text>
+        {progressData.map((entry) => (
+          <View key={entry.id} style={styles.progressCard}>
+            <Text style={styles.date}>📅 {entry.date}</Text>
+            <Text style={styles.item}>⚖️ Cân nặng: {entry.weight} kg</Text>
+            <Text style={styles.item}>🏋️ Vòng ngực: {entry.chest} cm</Text>
+            <Text style={styles.item}>🎯 Vòng eo: {entry.waist} cm</Text>
+            <Text style={styles.item}>🦵 Vòng đùi: {entry.thigh} cm</Text>
+            <Text style={styles.item}>
+              ⏳ Thời gian tập: {entry.workoutTime} phút
+            </Text>
+            <Text style={styles.item}>
+              💪 Mức tạ nâng: {entry.liftingWeight} kg
+            </Text>
+          </View>
+        ))}
+      </ScrollView>
+    </View>
   );
+};
+
+// 🔹 Cấu hình biểu đồ cân nặng
+const chartConfig = {
+  backgroundColor: "#1e90ff",
+  backgroundGradientFrom: "#1e90ff",
+  backgroundGradientTo: "#87cefa",
+  decimalPlaces: 1,
+  color: (opacity = 1) => `rgba(255, 255, 255, ${opacity})`,
+  labelColor: (opacity = 1) => `rgba(255, 255, 255, ${opacity})`,
 };
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    padding: 20,
+    flex: 1, // 🔹 Giữ bố cục toàn màn hình
     backgroundColor: "#f8f9fa",
+  },
+  scrollContainer: {
+    flexGrow: 1, // 🔹 Đảm bảo nội dung cuộn toàn màn hình
+    padding: 20,
   },
   title: {
     fontSize: 22,
@@ -83,9 +112,41 @@ const styles = StyleSheet.create({
     textAlign: "center",
     marginBottom: 20,
   },
+  chartTitle: {
+    fontSize: 18,
+    fontWeight: "bold",
+    textAlign: "center",
+    marginBottom: 10,
+  },
   chart: {
     borderRadius: 10,
     alignSelf: "center",
+    marginBottom: 20,
+  },
+  listTitle: {
+    fontSize: 20,
+    fontWeight: "bold",
+    marginTop: 20,
+    marginBottom: 10,
+  },
+  progressCard: {
+    backgroundColor: "#fff",
+    padding: 15,
+    marginBottom: 15,
+    borderRadius: 10,
+    shadowColor: "#000",
+    shadowOpacity: 0.1,
+    shadowRadius: 5,
+  },
+  date: {
+    fontSize: 16,
+    fontWeight: "bold",
+    marginBottom: 5,
+    color: "#007bff",
+  },
+  item: {
+    fontSize: 16,
+    marginBottom: 5,
   },
   noData: {
     textAlign: "center",

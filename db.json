@@ -2,23 +2,16 @@
   "users": [
     {
       "id": "1",
-      "name": "DUY",
+      "name": "THÁI",
       "email": "abc@gmail.com",
       "password": "123456",
       "verified": true
     },
     {
       "id": "2",
-      "name": "Long",
+      "name": "LONG",
       "email": "user2@gmail.com",
       "password": "654321",
-      "verified": true
-    },
-    {
-      "id": "2845",
-      "name": "Thái",
-      "email": "acquynho2000@gmail.com",
-      "password": "123456",
       "verified": true
     },
     {
@@ -537,34 +530,42 @@
         },
         {
           "id": "7",
-          "completed": true,
+          "completed": false,
           "note": "Hhhh"
         },
         {
           "id": "5",
-          "completed": true,
-          "note": ""
+          "completed": false,
+          "note": "Okeeee"
         },
         {
           "id": "6",
-          "completed": true,
+          "completed": false,
           "note": "Yeahh"
         }
       ]
     },
     {
-      "id": "4a70",
+      "id": "99c8",
       "userId": "1",
       "date": "2025-03-15",
-      "workoutName": "Squat",
+      "workoutName": "Dumbbell Fly",
       "exercises": [
         {
-          "id": "2",
+          "id": "11",
           "completed": true,
-          "note": ""
-        },
+          "note": "Oke"
+        }
+      ]
+    },
+    {
+      "id": "c42e",
+      "userId": "2",
+      "date": "2025-03-16",
+      "workoutName": "Burpees",
+      "exercises": [
         {
-          "id": "4",
+          "id": "14",
           "completed": true,
           "note": ""
         }

@@ -8,6 +8,7 @@ import {
 } from "react-native";
 import api from "../api";
 import AsyncStorage from "@react-native-async-storage/async-storage";
+import { useFocusEffect } from "@react-navigation/native";
 
 const WorkoutHistoryScreen = ({ navigation }) => {
   const [userId, setUserId] = useState(null);
@@ -18,10 +19,17 @@ const WorkoutHistoryScreen = ({ navigation }) => {
       if (userData) {
         const user = JSON.parse(userData);
         setUserId(user.id);
-        fetchHistory(user.id);
       }
     });
   }, []);
+
+  useFocusEffect(
+    React.useCallback(() => {
+      if (userId) {
+        fetchHistory(userId);
+      }
+    }, [userId])
+  );
 
   const fetchHistory = (userId) => {
     api
@@ -60,19 +68,24 @@ const WorkoutHistoryScreen = ({ navigation }) => {
   );
 
   return (
-    <FlatList
-      data={history}
-      keyExtractor={(item) => item.id.toString()}
-      renderItem={renderHistory}
-      contentContainerStyle={styles.container}
-    />
+    <View style={styles.container}>
+      <FlatList
+        data={history}
+        keyExtractor={(item) => item.id.toString()}
+        renderItem={renderHistory}
+        contentContainerStyle={styles.listContainer}
+      />
+    </View>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
-    padding: 20,
+    flex: 1,
     backgroundColor: "#f8f9fa",
+  },
+  listContainer: {
+    padding: 20,
   },
   historyCard: {
     backgroundColor: "#fff",

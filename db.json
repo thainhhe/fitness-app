@@ -5,14 +5,32 @@
       "name": "THÁI",
       "email": "abc@gmail.com",
       "password": "123456",
-      "verified": true
+      "verified": true,
+      "userProfile": {
+        "age": 25,
+        "dob": "1999-05-15",
+        "gender": "Male",
+        "avatar": "",
+        "bio": "Yêu thích tập gym, mong muốn có body săn chắc.",
+        "job": "Nhân viên văn phòng",
+        "fitnessGoal": "Giảm mỡ, tăng cơ bắp"
+      }
     },
     {
       "id": "2",
       "name": "LONG",
       "email": "user2@gmail.com",
       "password": "654321",
-      "verified": true
+      "verified": true,
+      "userProfile": {
+        "age": 27,
+        "dob": "1997-10-22",
+        "gender": "Male",
+        "avatar": "",
+        "bio": "Đam mê thể thao, yêu thích yoga để thư giãn.",
+        "job": "Giáo viên",
+        "fitnessGoal": "Tăng sự linh hoạt, cải thiện sức khỏe tinh thần"
+      }
     },
     {
       "id": "83ba",
@@ -21,7 +39,16 @@
       "password": "123456",
       "verified": true,
       "verificationCode": "340387",
-      "resetCode": null
+      "resetCode": null,
+      "userProfile": {
+        "dob": "2000-02-18",
+        "age": 24,
+        "gender": "Male",
+        "avatar": "",
+        "bio": "Chạy bộ mỗi sáng, rèn luyện sức bền.",
+        "job": "Sinh viên",
+        "fitnessGoal": "Cải thiện tốc độ chạy, nâng cao sức khỏe tim mạch"
+      }
     }
   ],
   "exercises": [

@@ -109,6 +109,16 @@ const HomeScreen = ({ navigation }) => {
           )}
         />
       </View>
+       {/* Gợi ý dinh dưỡng */}
+    <View style={styles.section}>
+    <Text style={styles.sectionTitle}>Gợi ý Dinh Dưỡng</Text>
+    <TouchableOpacity
+    style={styles.nutritionButton}
+    onPress={() => navigation.navigate("NutritionSuggestion")}
+    >
+    <Text style={styles.nutritionButtonText}>Xem Gợi Ý Dinh Dưỡng</Text>
+    </TouchableOpacity>
+      </View>
     </ScrollView>
   );
 };
@@ -189,6 +199,19 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   progressButtonText: {
+    color: "#fff",
+    fontSize: 16,
+    fontWeight: "bold",
+  },
+  nutritionButton: {
+    backgroundColor: "#dc3545",
+    padding: 15,
+    borderRadius: 10,
+    alignItems: "center",
+    marginBottom: 20,
+    marginTop: 10,
+  },
+  nutritionButtonText: {
     color: "#fff",
     fontSize: 16,
     fontWeight: "bold",

@@ -5,7 +5,8 @@
       "name": "DUY",
       "email": "abc@gmail.com",
       "password": "123456",
-      "verified": true
+      "verified": true,
+      "resetCode": "247660"
     },
     {
       "id": "2",
@@ -29,6 +30,14 @@
       "verified": true,
       "verificationCode": "340387",
       "resetCode": null
+    },
+    {
+      "id": "00b9",
+      "name": "Bao",
+      "email": "bao@gmail.com",
+      "password": "123456",
+      "verified": true,
+      "verificationCode": "313651"
     }
   ],
   "exercises": [
@@ -568,6 +577,41 @@
           "completed": true,
           "note": ""
         }
+      ]
+    }
+  ],
+  "mealPlans": [
+    {
+      "id": 1,
+      "name": "Thực đơn tăng cơ",
+      "goal": "Tăng cơ",
+      "calories": 2500,
+      "meals": [
+        { "name": "Ức gà và khoai lang", "calories": 500 },
+        { "name": "Bò bít tết và gạo lứt", "calories": 600 },
+        { "name": "Cá hồi và bông cải xanh", "calories": 550 }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Thực đơn giảm cân",
+      "goal": "Giảm cân",
+      "calories": 1800,
+      "meals": [
+        { "name": "Salad ức gà", "calories": 400 },
+        { "name": "Cá hấp và rau củ", "calories": 500 },
+        { "name": "Sữa chua Hy Lạp", "calories": 200 }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Thực đơn duy trì sức khỏe",
+      "goal": "Duy trì sức khỏe",
+      "calories": 2200,
+      "meals": [
+        { "name": "Cháo yến mạch và hạt chia", "calories": 350 },
+        { "name": "Cơm gạo lứt, cá basa và rau luộc", "calories": 600 },
+        { "name": "Sinh tố bơ và hạnh nhân", "calories": 300 }
       ]
     }
   ]

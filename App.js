@@ -16,7 +16,8 @@ import AddProgressScreen from "./screens/AddProgressScreen";
 import WorkoutCompletionScreen from "./screens/WorkoutCompletionScreen";
 import WorkoutHistoryScreen from "./screens/WorkoutHistoryScreen";
 import WorkoutHistoryDetailScreen from "./screens/WorkoutHistoryDetailScreen";
-
+import MealPlanDetailScreen from "./screens/MealPlanDetailScreen";
+import NutritionSuggestionScreen from "./screens/NutritionSuggestionScreen";
 const Stack = createStackNavigator();
 
 export default function App() {
@@ -44,7 +45,10 @@ export default function App() {
           name="WorkoutHistoryDetail"
           component={WorkoutHistoryDetailScreen}
         />
+        <Stack.Screen name="NutritionSuggestion" component={NutritionSuggestionScreen} />
+        <Stack.Screen name="NutritionDetailScreen" component={MealPlanDetailScreen} />
       </Stack.Navigator>
+      
     </NavigationContainer>
   );
 }

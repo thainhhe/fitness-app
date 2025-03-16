@@ -4,11 +4,15 @@ import {
   Text,
   Image,
   ActivityIndicator,
-  ScrollView,
+  FlatList,
   StyleSheet,
   TouchableOpacity,
+  SafeAreaView,
+  Dimensions,
 } from "react-native";
 import api from "../api";
+
+const { width } = Dimensions.get("window");
 
 const ExerciseDetailScreen = ({ route, navigation }) => {
   const { id } = route.params || {};
@@ -20,11 +24,6 @@ const ExerciseDetailScreen = ({ route, navigation }) => {
       console.error("Không có ID để gọi API!");
       return;
     }
-
-    console.log(
-      "Gọi API với URL:",
-      `http://192.168.100.140:3001/exercises/${id}`
-    );
 
     api
       .get(`/exercises/${id}`)
@@ -43,66 +42,88 @@ const ExerciseDetailScreen = ({ route, navigation }) => {
   if (!exercise)
     return <Text style={styles.errorText}>Không tìm thấy bài tập!</Text>;
 
-  return (
-    <ScrollView style={styles.container}>
-      <Text style={styles.title}>{exercise.name}</Text>
+  // Tạo mảng gồm các phần tử để hiển thị
+  const renderExerciseContent = () => {
+    return (
+      <View style={styles.contentContainer}>
+        <Text style={styles.title}>{exercise.name}</Text>
 
-      {exercise.image ? (
-        <Image source={{ uri: exercise.image }} style={styles.image} />
-      ) : (
-        <Text style={styles.noImageText}>Không có hình ảnh</Text>
-      )}
+        {exercise.image ? (
+          <Image source={{ uri: exercise.image }} style={styles.image} />
+        ) : (
+          <Text style={styles.noImageText}>Không có hình ảnh</Text>
+        )}
 
-      <Text style={styles.description}>{exercise.description}</Text>
+        <Text style={styles.description}>{exercise.description}</Text>
 
-      {exercise.instructions?.length > 0 && (
-        <>
-          <Text style={styles.subTitle}>Cách thực hiện:</Text>
-          {exercise.instructions.map((step, index) => (
-            <Text key={index} style={styles.instructionItem}>
-              {`\u2022 ${step}`}
+        {exercise.instructions?.length > 0 && (
+          <>
+            <Text style={styles.subTitle}>Cách thực hiện:</Text>
+            {exercise.instructions.map((step, index) => (
+              <Text key={index} style={styles.instructionItem}>
+                {`\u2022 ${step}`}
+              </Text>
+            ))}
+          </>
+        )}
+
+        {exercise.reps_sets && (
+          <>
+            <Text style={styles.subTitle}>Số rep/set gợi ý:</Text>
+            <Text style={styles.repSetText}>
+              🔰 Người mới: {exercise.reps_sets?.beginner || "Không có dữ liệu"}
             </Text>
-          ))}
-        </>
-      )}
+            <Text style={styles.repSetText}>
+              ⚡ Trung bình:{" "}
+              {exercise.reps_sets?.intermediate || "Không có dữ liệu"}
+            </Text>
+            <Text style={styles.repSetText}>
+              🔥 Nâng cao: {exercise.reps_sets?.advanced || "Không có dữ liệu"}
+            </Text>
+          </>
+        )}
 
-      {exercise.reps_sets && (
-        <>
-          <Text style={styles.subTitle}>Số rep/set gợi ý:</Text>
-          <Text style={styles.repSetText}>
-            🔰 Người mới: {exercise.reps_sets?.beginner || "Không có dữ liệu"}
-          </Text>
-          <Text style={styles.repSetText}>
-            ⚡ Trung bình:{" "}
-            {exercise.reps_sets?.intermediate || "Không có dữ liệu"}
-          </Text>
-          <Text style={styles.repSetText}>
-            🔥 Nâng cao: {exercise.reps_sets?.advanced || "Không có dữ liệu"}
-          </Text>
-        </>
-      )}
+        {/* 🔹 Nút Hoàn thành buổi tập */}
+        <TouchableOpacity
+          style={styles.completeButton}
+          onPress={() =>
+            navigation.navigate("WorkoutCompletion", {
+              workoutName: exercise.name,
+              exercises: [exercise], // Chuyển bài tập hiện tại thành danh sách
+            })
+          }
+        >
+          <Text style={styles.buttonText}>Hoàn thành buổi tập</Text>
+        </TouchableOpacity>
+      </View>
+    );
+  };
 
-      {/* 🔹 Nút Hoàn thành buổi tập */}
-      <TouchableOpacity
-        style={styles.completeButton}
-        onPress={() =>
-          navigation.navigate("WorkoutCompletion", {
-            workoutName: exercise.name,
-            exercises: [exercise], // Chuyển bài tập hiện tại thành danh sách
-          })
-        }
-      >
-        <Text style={styles.buttonText}>Hoàn thành buổi tập</Text>
-      </TouchableOpacity>
-    </ScrollView>
+  // Thay thế ScrollView bằng FlatList
+  return (
+    <SafeAreaView style={styles.container}>
+      <FlatList
+        data={[{ key: "content" }]}
+        renderItem={() => renderExerciseContent()}
+        keyExtractor={(item) => item.key}
+        contentContainerStyle={styles.flatListContent}
+      />
+    </SafeAreaView>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    padding: 20,
     backgroundColor: "#f8f9fa",
+    width: width,
+  },
+  flatListContent: {
+    paddingHorizontal: 20,
+    paddingVertical: 20,
+  },
+  contentContainer: {
+    width: "100%",
   },
   title: {
     fontSize: 24,

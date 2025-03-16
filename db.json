@@ -29,6 +29,14 @@
       "verified": true,
       "verificationCode": "340387",
       "resetCode": null
+    },
+    {
+      "id": "8484",
+      "name": "duy01",
+      "email": "vuducduy0503@gmail.com",
+      "password": "123456",
+      "verified": true,
+      "verificationCode": "934084"
     }
   ],
   "exercises": [
@@ -493,6 +501,17 @@
       "thigh": null,
       "workoutTime": 50,
       "liftingWeight": null
+    },
+    {
+      "id": "c1f6",
+      "userId": "1",
+      "date": "2025-03-16",
+      "weight": 70,
+      "chest": null,
+      "waist": null,
+      "thigh": null,
+      "workoutTime": 60,
+      "liftingWeight": 20
     }
   ],
   "workoutHistory": [
@@ -505,17 +524,42 @@
         {
           "id": "1",
           "completed": true,
-          "note": "Cảm thấy tốt, tập đủ reps"
+          "note": "Cảm thấy tốt, tập đủ reps hahaha"
         },
         {
           "id": "2",
           "completed": true,
-          "note": ""
+          "note": "hehe"
         },
         {
           "id": "3",
           "completed": true,
-          "note": "Cần cải thiện tư thế"
+          "note": "Cần cải thiện tư thế yahoo"
+        },
+        {
+          "id": "6",
+          "completed": true,
+          "note": "Done 2"
+        },
+        {
+          "id": "5",
+          "completed": true,
+          "note": "hello"
+        },
+        {
+          "id": "4",
+          "completed": true,
+          "note": "Done 3\n"
+        },
+        {
+          "id": "11",
+          "completed": true,
+          "note": "done"
+        },
+        {
+          "id": "14",
+          "completed": true,
+          "note": "test"
         }
       ]
     },

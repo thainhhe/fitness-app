@@ -5,10 +5,13 @@ import {
   ScrollView,
   StyleSheet,
   ActivityIndicator,
+  Dimensions,
 } from "react-native";
 import { LineChart } from "react-native-chart-kit";
 import api from "../api";
 import AsyncStorage from "@react-native-async-storage/async-storage";
+
+const screenWidth = Dimensions.get("window").width; // Lấy kích thước màn hình
 
 const ProgressScreen = ({ route }) => {
   const [userId, setUserId] = useState(null);
@@ -53,17 +56,25 @@ const ProgressScreen = ({ route }) => {
         <Text style={styles.title}>Tiến trình cá nhân</Text>
 
         {/* 🔹 Biểu đồ Cân nặng */}
-        <Text style={styles.chartTitle}>Cân nặng theo ngày (kg)</Text>
-        <LineChart
-          data={{
-            labels: progressData.map((entry) => entry.date),
-            datasets: [{ data: progressData.map((entry) => entry.weight) }],
-          }}
-          width={350}
-          height={200}
-          chartConfig={chartConfig}
-          style={styles.chart}
-        />
+        <View style={styles.chartContainer}>
+          <Text style={styles.chartTitle}>Cân nặng theo ngày (kg)</Text>
+          <ScrollView horizontal showsHorizontalScrollIndicator={false}>
+            <View style={{ width: Math.max(400, screenWidth - 40) }}>
+              <LineChart
+                data={{
+                  labels: progressData.map((entry) => entry.date),
+                  datasets: [
+                    { data: progressData.map((entry) => entry.weight) },
+                  ],
+                }}
+                width={Math.max(400, screenWidth - 40)}
+                height={220}
+                chartConfig={chartConfig}
+                style={styles.chart}
+              />
+            </View>
+          </ScrollView>
+        </View>
 
         {/* 🔹 Danh sách các chỉ số tiến trình */}
         <Text style={styles.listTitle}>Chi tiết tiến trình</Text>
@@ -99,17 +110,21 @@ const chartConfig = {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1, // 🔹 Giữ bố cục toàn màn hình
+    flex: 1, // 🔥 Đảm bảo View chính chiếm toàn bộ màn hình
     backgroundColor: "#f8f9fa",
   },
   scrollContainer: {
-    flexGrow: 1, // 🔹 Đảm bảo nội dung cuộn toàn màn hình
+    flexGrow: 1, // 🔥 Đảm bảo nội dung chiếm toàn bộ không gian cuộn
     padding: 20,
   },
   title: {
     fontSize: 22,
     fontWeight: "bold",
     textAlign: "center",
+    marginBottom: 20,
+  },
+  chartContainer: {
+    alignItems: "center",
     marginBottom: 20,
   },
   chartTitle: {
@@ -120,8 +135,6 @@ const styles = StyleSheet.create({
   },
   chart: {
     borderRadius: 10,
-    alignSelf: "center",
-    marginBottom: 20,
   },
   listTitle: {
     fontSize: 20,

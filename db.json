@@ -18,7 +18,7 @@
       "id": "83ba",
       "name": "Thaiii",
       "email": "nguyenthaigpt@gmail.com",
-      "password": "123456",
+      "password": "123",
       "verified": true,
       "verificationCode": "340387",
       "resetCode": null
@@ -566,6 +566,37 @@
       "exercises": [
         {
           "id": "14",
+          "completed": true,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "0cde",
+      "userId": "83ba",
+      "date": "2025-03-16",
+      "workoutName": "Lunges",
+      "exercises": [
+        {
+          "id": "5",
+          "completed": true,
+          "note": ""
+        },
+        {
+          "id": "2",
+          "completed": true,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "e92f",
+      "userId": "83ba",
+      "date": "2025-03-16",
+      "workoutName": "Lunges",
+      "exercises": [
+        {
+          "id": "5",
           "completed": true,
           "note": ""
         }

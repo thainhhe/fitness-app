@@ -11,6 +11,8 @@ import {
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import api from "../api";
 import Icon from "react-native-vector-icons/FontAwesome";
+import { MaterialIcons } from "@expo/vector-icons";
+import BlogSection from "./blogs/components/BlogSection";
 
 const HomeScreen = ({ navigation }) => {
   const [exercises, setExercises] = useState([]);
@@ -28,6 +30,7 @@ const HomeScreen = ({ navigation }) => {
   }, []);
 
   return (
+    <>
     <ScrollView style={styles.container}>
       {/* Header */}
       <Text style={styles.header}>
@@ -73,6 +76,14 @@ const HomeScreen = ({ navigation }) => {
         >
           <Text style={styles.progressButtonText}>Lịch sử luyện tập</Text>
         </TouchableOpacity>
+
+          {/* BMI calculate and meal plan for BMI */}
+        <TouchableOpacity
+          style={styles.progressButton}
+          onPress={() => navigation.navigate("BMIGuide")}
+        >
+          <Text style={styles.progressButtonText}>Xem chế độ ăn dựa vào chỉ số BMI</Text>
+        </TouchableOpacity>
       </View>
 
       {/* Chương trình tập luyện */}
@@ -103,6 +114,9 @@ const HomeScreen = ({ navigation }) => {
         </TouchableOpacity>
       </View>
 
+      {/* Blogs contents */}
+      <BlogSection navigation={navigation}/>
+
       {/* Bài tập gợi ý */}
       <View style={styles.section}>
         <Text style={styles.sectionTitle}>Bài tập gợi ý</Text>
@@ -127,6 +141,25 @@ const HomeScreen = ({ navigation }) => {
         />
       </View>
     </ScrollView>
+    {/* Navbar */}
+    <View style={styles.navbar}>
+        <TouchableOpacity
+          style={styles.navButton}
+          onPress={() => navigation.navigate("Home")}
+        >
+          <MaterialIcons name="fitness-center" size={24} color="white" />
+          <Text style={styles.navButtonText}>Kế hoạch tập</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity
+          style={styles.navButton}
+          onPress={() => navigation.navigate("Notebook")}
+        >
+          <MaterialIcons name="book" size={24} color="white" />
+          <Text style={styles.navButtonText}>Sổ tay</Text>
+        </TouchableOpacity>
+      </View>
+    </>
   );
 };
 
@@ -213,6 +246,21 @@ const styles = StyleSheet.create({
   },
   progressButtonText: {
     color: "#fff",
+    fontSize: 16,
+    fontWeight: "bold",
+  },
+  navbar: {
+    flexDirection: "row",
+    justifyContent: "space-around",
+    backgroundColor: "#D8BFD8",
+    padding: 10,
+    marginTop: 20,
+    
+  },
+  navItem: {
+    padding: 10,
+  },
+  navText: {
     fontSize: 16,
     fontWeight: "bold",
   },

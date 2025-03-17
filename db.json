@@ -1,4 +1,24 @@
 {
+  "notebooks": [
+    {
+      "id": 1,
+      "title": "Bạn thuộc tạng người nào",
+      "content": "Bài viết này sẽ giúp bạn xác định tạng người của mình và từ đó chọn ra những bài tập và chế độ dinh dưỡng phù hợp nhất. Có ba tạng người chính:\n\n1. Ectomorph: Người có thân hình gầy, xương nhỏ, khó tăng cân nhưng dễ giảm mỡ. Các bài tập phù hợp bao gồm: Đẩy ngực ngang, Đẩy ngực trên, Ép ngực, Hít đất. Nên ăn nhiều protein và carbohydrate để tăng cơ.\n\n2. Mesomorph: Người có thân hình cân đối, cơ bắp phát triển tốt, dễ tăng cơ và giảm mỡ. Các bài tập đề xuất: Deadlift, Squat, Pull-up, Bench Press. Chế độ ăn cần cân bằng giữa protein, carbohydrate và chất béo tốt.\n\n3. Endomorph: Người có thân hình tròn, dễ tăng cân và khó giảm mỡ. Các bài tập nên tập trung vào cardio và rèn luyện sức mạnh như: Chạy bộ, Đạp xe, HIIT, Plank. Hạn chế ăn đồ ngọt và thức ăn nhanh, ưu tiên protein nạc và rau xanh.\n\nTừ đó, hãy lựa chọn phương pháp tập luyện và dinh dưỡng phù hợp nhất cho bản thân bạn!",
+      "image": "https://cdn.dribbble.com/users/245474/screenshots/6971492/body_types_4x.png"
+    },
+    {
+      "id": 2,
+      "title": "Béo bụng",
+      "content": "Béo bụng là vấn đề phổ biến không chỉ ảnh hưởng đến thẩm mỹ mà còn có thể gây ra nhiều vấn đề về sức khỏe. Nguyên nhân gây béo bụng bao gồm: ăn uống không hợp lý, lười vận động, stress và di truyền.\n\nĐể giảm béo bụng hiệu quả, bạn cần kết hợp giữa chế độ ăn uống khoa học và tập luyện thể dục đều đặn:\n\n1. Bài tập Cardio: Giúp đốt cháy calo và mỡ thừa toàn thân, bao gồm: Chạy bộ, Đạp xe, Bơi lội.\n\n2. Bài tập Sức mạnh: Xây dựng cơ bắp, thúc đẩy quá trình trao đổi chất. Các bài tập gồm: Squat, Deadlift, Lunges, Leg Press.\n\n3. Chế độ ăn uống: Hạn chế đường, tinh bột tinh chế, thức ăn nhanh và đồ uống có gas. Ưu tiên thực phẩm giàu protein, rau xanh và trái cây.\n\nHãy duy trì một thói quen sống lành mạnh để giảm mỡ bụng một cách tự nhiên và an toàn.",
+      "image": "https://th.bing.com/th/id/R.be15387fb427c4c68f2c81db4164307e?rik=8NLGxM48YReLJQ&pid=ImgRaw&r=0"
+    },
+    {
+      "id": 3,
+      "title": "Cách sở hữu cơ bụng hoàn hảo",
+      "content": "Để sở hữu cơ bụng hoàn hảo, bạn cần kết hợp giữa chế độ ăn uống hợp lý và các bài tập chuyên biệt:\n\n1. Chế độ ăn uống: Hạn chế đường, tinh bột tinh chế, và thức ăn nhiều dầu mỡ. Tăng cường rau xanh, protein nạc (như thịt gà, cá, trứng), và bổ sung các loại hạt giàu dinh dưỡng.\n\n2. Các bài tập cơ bụng phổ biến:\n  - Crunches: Tác động mạnh vào vùng bụng trên.\n  - Plank: Giúp rèn luyện cơ bụng dưới và cơ lưng dưới.\n  - Leg Raises: Nhắm vào cơ bụng dưới.\n  - Russian Twist: Tăng cường sức mạnh và độ linh hoạt của cơ xiên.\n\n3. Kết hợp tập cardio: Giúp đốt cháy mỡ thừa toàn thân, giúp các nhóm cơ hiện rõ hơn. Có thể lựa chọn các bài tập như chạy bộ, đạp xe hoặc bơi lội.\n\n4. Nghỉ ngơi hợp lý: Ngủ đủ giấc và tránh căng thẳng cũng rất quan trọng trong việc hình thành cơ bụng săn chắc.\n\nHãy kiên trì và thực hiện theo một kế hoạch cụ thể để đạt được mục tiêu cơ bụng hoàn hảo của bạn!",
+      "image": "https://th.bing.com/th/id/OIP.RAGRhd3f8nxWLnaaK1IJNAHaEK?rs=1&pid=ImgDetMain"
+    }
+  ],
   "users": [
     {
       "id": "1",
@@ -37,7 +57,7 @@
       "id": "83ba",
       "name": "Thaiii",
       "email": "nguyenthaigpt@gmail.com",
-      "password": "123456",
+      "password": "123",
       "verified": true,
       "verificationCode": "340387",
       "resetCode": null,
@@ -50,6 +70,14 @@
         "job": "Sinh viên",
         "fitnessGoal": "Cải thiện tốc độ chạy, nâng cao sức khỏe tim mạch"
       }
+    },
+    {
+      "id": "8484",
+      "name": "duy01",
+      "email": "vuducduy0503@gmail.com",
+      "password": "123456",
+      "verified": true,
+      "verificationCode": "934084"
     }
   ],
   "exercises": [
@@ -514,18 +542,8 @@
       "thigh": null,
       "workoutTime": 50,
       "liftingWeight": null
-    },
-    {
-      "id": "63f2",
-      "userId": "1",
-      "date": "2025-03-16",
-      "weight": 70,
-      "chest": 60,
-      "waist": 65,
-      "thigh": 66,
-      "workoutTime": 60,
-      "liftingWeight": 5
     }
+    
   ],
   "workoutHistory": [
     {
@@ -537,17 +555,47 @@
         {
           "id": "1",
           "completed": true,
-          "note": "Cảm thấy tốt, tập đủ reps"
+          "note": "Cảm thấy tốt, tập đủ reps hahaha"
         },
         {
           "id": "2",
           "completed": true,
-          "note": ""
+          "note": "hehe"
         },
         {
           "id": "3",
           "completed": true,
-          "note": "Cần cải thiện tư thế"
+          "note": "Cần cải thiện tư thế yahoo"
+        },
+        {
+          "id": "6",
+          "completed": true,
+          "note": "Done 2"
+        },
+        {
+          "id": "5",
+          "completed": true,
+          "note": "hello"
+        },
+        {
+          "id": "4",
+          "completed": true,
+          "note": "Done 3\n"
+        },
+        {
+          "id": "11",
+          "completed": true,
+          "note": "done"
+        },
+        {
+          "id": "14",
+          "completed": true,
+          "note": "test"
+        },
+        {
+          "id": "8",
+          "completed": false,
+          "note": ""
         }
       ]
     },
@@ -619,6 +667,625 @@
           "note": ""
         }
       ]
+    },
+    {
+      "id": "0cde",
+      "userId": "83ba",
+      "date": "2025-03-16",
+      "workoutName": "Lunges",
+      "exercises": [
+        {
+          "id": "5",
+          "completed": true,
+          "note": ""
+        },
+        {
+          "id": "2",
+          "completed": true,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "e92f",
+      "userId": "83ba",
+      "date": "2025-03-16",
+      "workoutName": "Lunges",
+      "exercises": [
+        {
+          "id": "5",
+          "completed": true,
+          "note": ""
+        }
+      ]
+    }
+  ],
+  "bmiGuides": [
+    {
+      "id": "1",
+      "name": "Chế độ ăn tăng cân",
+      "calories": 2800,
+      "bmiRange": "<18.5",
+      "meals": [
+        {
+          "name": "Bữa sáng: Bánh mì trứng và sữa",
+          "recipe": "2 lát bánh mì nguyên cám, 2 quả trứng ốp la, 1 ly sữa tươi nguyên kem (250ml)."
+        },
+        {
+          "name": "Bữa phụ sáng: Sinh tố bơ",
+          "recipe": "1 quả bơ xay với 200ml sữa tươi và 1 thìa mật ong."
+        },
+        {
+          "name": "Bữa trưa: Cơm trắng, thịt ba chỉ kho và rau luộc",
+          "recipe": "150g cơm trắng, 150g thịt ba chỉ kho với nước dừa, 100g rau cải luộc."
+        },
+        {
+          "name": "Bữa phụ chiều: Hạnh nhân và chuối",
+          "recipe": "30g hạnh nhân, 1 quả chuối lớn."
+        },
+        {
+          "name": "Bữa tối: Cá nướng và khoai tây nghiền",
+          "recipe": "200g cá nướng với gia vị nhẹ, 150g khoai tây nghiền với sữa tươi."
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "name": "Chế độ ăn tăng cân 2",
+      "calories": 2800,
+      "bmiRange": "<18.5",
+      "meals": [
+        {
+          "name": "Bữa sáng: Cháo yến mạch và thịt bằm",
+          "recipe": "50g yến mạch nấu với 200ml sữa tươi nguyên kem, 100g thịt heo bằm xào tỏi."
+        },
+        {
+          "name": "Bữa phụ sáng: Sữa lắc chuối",
+          "recipe": "1 quả chuối, 250ml sữa tươi nguyên kem, 1 thìa bơ đậu phộng."
+        },
+        {
+          "name": "Bữa trưa: Cơm trắng, gà chiên và măng tây",
+          "recipe": "150g cơm trắng, 200g đùi gà chiên bơ, 100g măng tây xào tỏi."
+        },
+        {
+          "name": "Bữa phụ chiều: Bánh quy và sữa",
+          "recipe": "3 chiếc bánh quy bơ, 200ml sữa tươi nguyên kem."
+        },
+        {
+          "name": "Bữa tối: Bò bít tết và khoai tây chiên",
+          "recipe": "200g bò bít tết áp chảo, 150g khoai tây chiên, 50g rau xào."
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "name": "Chế độ ăn tăng cân 3",
+      "calories": 2800,
+      "bmiRange": "<18.5",
+      "meals": [
+        {
+          "name": "Bữa sáng: Bánh mì pate và sữa đặc",
+          "recipe": "2 lát bánh mì nguyên cám phết pate (50g), 1 ly sữa đặc pha (250ml)."
+        },
+        {
+          "name": "Bữa phụ sáng: Sinh tố xoài",
+          "recipe": "1 quả xoài chín, 200ml sữa tươi, 1 thìa mật ong."
+        },
+        {
+          "name": "Bữa trưa: Cơm trắng, sườn nướng mật ong",
+          "recipe": "150g cơm trắng, 200g sườn nướng mật ong, 100g bí đỏ luộc."
+        },
+        {
+          "name": "Bữa phụ chiều: Hạt điều và chuối",
+          "recipe": "30g hạt điều rang, 1 quả chuối lớn."
+        },
+        {
+          "name": "Bữa tối: Mì Ý sốt bò bằm và phô mai",
+          "recipe": "100g mì Ý, 150g sốt bò bằm, rắc 20g phô mai."
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "name": "Chế độ ăn tăng cân 4",
+      "calories": 2800,
+      "bmiRange": "<18.5",
+      "meals": [
+        {
+          "name": "Bữa sáng: Trứng chiên phô mai và bánh mì",
+          "recipe": "3 quả trứng chiên với 20g phô mai, 2 lát bánh mì bơ."
+        },
+        {
+          "name": "Bữa phụ sáng: Sữa chua trái cây",
+          "recipe": "200g sữa chua nguyên kem, 100g dâu tây tươi."
+        },
+        {
+          "name": "Bữa trưa: Cơm trắng, cá chiên và rau cải",
+          "recipe": "150g cơm trắng, 200g cá chiên giòn, 100g rau cải xào tỏi."
+        },
+        {
+          "name": "Bữa phụ chiều: Bánh ngọt và sữa",
+          "recipe": "1 cái bánh bông lan nhỏ, 200ml sữa tươi."
+        },
+        {
+          "name": "Bữa tối: Gà quay và khoai lang nướng",
+          "recipe": "200g gà quay, 150g khoai lang nướng, 50g rau luộc."
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Chế độ ăn tăng cơ",
+      "calories": 2500,
+      "bmiRange": "18.5-24.9",
+      "meals": [
+        {
+          "name": "Bữa sáng: Ức gà áp chảo và yến mạch",
+          "recipe": "Áp chảo 200g ức gà với 1 thìa dầu ô liu, nấu 50g yến mạch với 200ml sữa không đường, thêm 10g hạt chia."
+        },
+        {
+          "name": "Bữa phụ sáng: Sinh tố whey protein",
+          "recipe": "Pha 1 muỗng whey protein (30g) với 300ml sữa tươi không đường, 1 quả chuối và 15g bơ đậu phộng."
+        },
+        {
+          "name": "Bữa trưa: Cơm gạo lứt và bò xào rau củ",
+          "recipe": "100g cơm gạo lứt, 150g thịt bò thái mỏng xào với 100g bông cải xanh và ớt chuông, nêm gia vị nhẹ."
+        },
+        {
+          "name": "Bữa phụ chiều: Hạnh nhân và sữa chua Hy Lạp",
+          "recipe": "20g hạnh nhân rang không muối, 150g sữa chua Hy Lạp không đường."
+        },
+        {
+          "name": "Bữa tối: Cá hồi nướng và khoai lang",
+          "recipe": "200g cá hồi nướng với tiêu và chanh, 150g khoai lang nướng hoặc luộc, thêm 50g rau luộc."
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "name": "Chế độ ăn tăng cơ 2",
+      "calories": 2500,
+      "bmiRange": "18.5-24.9",
+      "meals": [
+        {
+          "name": "Bữa sáng: Trứng luộc và bánh mì nguyên cám",
+          "recipe": "3 quả trứng luộc, 2 lát bánh mì nguyên cám phết 15g bơ đậu phộng."
+        },
+        {
+          "name": "Bữa phụ sáng: Sinh tố whey dâu",
+          "recipe": "1 muỗng whey protein (30g), 200ml sữa không đường, 100g dâu tây."
+        },
+        {
+          "name": "Bữa trưa: Gạo lứt, gà nướng và đậu",
+          "recipe": "100g gạo lứt, 200g ức gà nướng, 100g đậu Hà Lan luộc."
+        },
+        {
+          "name": "Bữa phụ chiều: Hạt óc chó và sữa chua",
+          "recipe": "20g hạt óc chó, 150g sữa chua Hy Lạp không đường."
+        },
+        {
+          "name": "Bữa tối: Bò áp chảo và mì ống",
+          "recipe": "200g bò áp chảo, 80g mì ống nguyên cám, 50g rau xào."
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "name": "Chế độ ăn tăng cơ 3",
+      "calories": 2500,
+      "bmiRange": "18.5-24.9",
+      "meals": [
+        {
+          "name": "Bữa sáng: Yến mạch và trứng ốp la",
+          "recipe": "50g yến mạch nấu với 200ml sữa không đường, 2 quả trứng ốp la."
+        },
+        {
+          "name": "Bữa phụ sáng: Sinh tố whey bơ",
+          "recipe": "1 muỗng whey protein (30g), 200ml sữa không đường, nửa quả bơ."
+        },
+        {
+          "name": "Bữa trưa: Cơm gạo lứt, cá ngừ áp chảo",
+          "recipe": "100g gạo lứt, 200g cá ngừ áp chảo, 100g rau củ hấp."
+        },
+        {
+          "name": "Bữa phụ chiều: Hạnh nhân và táo",
+          "recipe": "20g hạnh nhân, 1 quả táo nhỏ."
+        },
+        {
+          "name": "Bữa tối: Gà nướng và khoai tây",
+          "recipe": "200g ức gà nướng, 150g khoai tây luộc, 50g rau cải luộc."
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "name": "Chế độ ăn tăng cơ 4",
+      "calories": 2500,
+      "bmiRange": "18.5-24.9",
+      "meals": [
+        {
+          "name": "Bữa sáng: Bánh mì sandwich gà",
+          "recipe": "2 lát bánh mì nguyên cám, 150g ức gà luộc xé, 20g sốt mù tạt."
+        },
+        {
+          "name": "Bữa phụ sáng: Sữa lắc whey chuối",
+          "recipe": "1 muỗng whey protein (30g), 250ml sữa không đường, 1 quả chuối."
+        },
+        {
+          "name": "Bữa trưa: Gạo lứt, bò xào nấm",
+          "recipe": "100g gạo lứt, 150g thịt bò xào nấm đông cô (100g), 50g rau luộc."
+        },
+        {
+          "name": "Bữa phụ chiều: Hạt dẻ và sữa chua",
+          "recipe": "20g hạt dẻ rang, 150g sữa chua không đường."
+        },
+        {
+          "name": "Bữa tối: Cá thu nướng và quinoa",
+          "recipe": "200g cá thu nướng, 100g quinoa nấu chín, 50g rau hấp."
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Chế độ ăn duy trì cân nặng",
+      "calories": 2200,
+      "bmiRange": "18.5-24.9",
+      "meals": [
+        {
+          "name": "Bữa sáng: Bánh mì nguyên cám và bơ đậu phộng",
+          "recipe": "2 lát bánh mì nguyên cám phết 20g bơ đậu phộng tự nhiên, thêm 1 quả chuối nhỏ."
+        },
+        {
+          "name": "Bữa phụ sáng: Hạt óc chó và sữa tươi",
+          "recipe": "15g hạt óc chó, 200ml sữa tươi không đường."
+        },
+        {
+          "name": "Bữa trưa: Cơm trắng và thịt heo nạc kho",
+          "recipe": "100g cơm trắng, 120g thịt heo nạc kho với nước mắm và tỏi, thêm 100g rau luộc."
+        },
+        {
+          "name": "Bữa phụ chiều: Phô mai và nho",
+          "recipe": "1 miếng phô mai ít béo (20g), 10 quả nho tươi."
+        },
+        {
+          "name": "Bữa tối: Mì ống sốt cà chua và tôm",
+          "recipe": "80g mì ống nguyên cám, sốt cà chua tự làm (100g cà chua tươi, tỏi), 100g tôm luộc."
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "name": "Chế độ ăn duy trì cân nặng 2",
+      "calories": 2200,
+      "bmiRange": "18.5-24.9",
+      "meals": [
+        {
+          "name": "Bữa sáng: Yến mạch và trái cây",
+          "recipe": "40g yến mạch nấu với 200ml sữa không đường, 100g dâu tây."
+        },
+        {
+          "name": "Bữa phụ sáng: Hạt điều và trà",
+          "recipe": "15g hạt điều rang, 1 cốc trà không đường."
+        },
+        {
+          "name": "Bữa trưa: Cơm trắng, cá kho tộ",
+          "recipe": "100g cơm trắng, 150g cá kho tộ, 100g rau muống luộc."
+        },
+        {
+          "name": "Bữa phụ chiều: Sữa chua và nho",
+          "recipe": "150g sữa chua không đường, 10 quả nho."
+        },
+        {
+          "name": "Bữa tối: Gà xào nấm và khoai lang",
+          "recipe": "150g ức gà xào nấm (100g), 100g khoai lang luộc."
+        }
+      ]
+    },
+    {
+      "id": "13",
+      "name": "Chế độ ăn duy trì cân nặng 3",
+      "calories": 2200,
+      "bmiRange": "18.5-24.9",
+      "meals": [
+        {
+          "name": "Bữa sáng: Bánh mì trứng và cà phê",
+          "recipe": "2 lát bánh mì nguyên cám, 2 quả trứng ốp la, 1 cốc cà phê đen."
+        },
+        {
+          "name": "Bữa phụ sáng: Táo và hạt óc chó",
+          "recipe": "1 quả táo nhỏ, 15g hạt óc chó."
+        },
+        {
+          "name": "Bữa trưa: Cơm trắng, thịt bò xào",
+          "recipe": "100g cơm trắng, 120g thịt bò xào hành tây, 100g rau cải luộc."
+        },
+        {
+          "name": "Bữa phụ chiều: Phô mai và dưa leo",
+          "recipe": "20g phô mai ít béo, 100g dưa leo cắt lát."
+        },
+        {
+          "name": "Bữa tối: Cá nướng và gạo lứt",
+          "recipe": "150g cá nướng, 80g gạo lứt, 50g rau hấp."
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "name": "Chế độ ăn duy trì cân nặng 4",
+      "calories": 2200,
+      "bmiRange": "18.5-24.9",
+      "meals": [
+        {
+          "name": "Bữa sáng: Cháo gà và bánh mì",
+          "recipe": "1 bát cháo gà (50g gạo, 100g thịt gà), 1 lát bánh mì."
+        },
+        {
+          "name": "Bữa phụ sáng: Sữa tươi và hạt dẻ",
+          "recipe": "200ml sữa không đường, 15g hạt dẻ rang."
+        },
+        {
+          "name": "Bữa trưa: Cơm trắng, tôm rim",
+          "recipe": "100g cơm trắng, 150g tôm rim mặn ngọt, 100g rau luộc."
+        },
+        {
+          "name": "Bữa phụ chiều: Chuối và sữa chua",
+          "recipe": "1 quả chuối nhỏ, 100g sữa chua không đường."
+        },
+        {
+          "name": "Bữa tối: Thịt heo nướng và mì ống",
+          "recipe": "120g thịt heo nướng, 80g mì ống sốt cà chua, 50g rau xanh."
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Chế độ ăn giảm cân",
+      "calories": 1800,
+      "bmiRange": "25-29.9",
+      "meals": [
+        {
+          "name": "Bữa sáng: Salad rau củ và trứng luộc",
+          "recipe": "200g rau xanh (xà lách, dưa leo, cà chua) trộn với 1 thìa dầu ô liu, 2 quả trứng luộc."
+        },
+        {
+          "name": "Bữa phụ sáng: Táo và trà xanh",
+          "recipe": "1 quả táo (khoảng 150g), 1 cốc trà xanh không đường."
+        },
+        {
+          "name": "Bữa trưa: Ức gà nướng và rau hấp",
+          "recipe": "150g ức gà nướng với gia vị nhẹ (tiêu, ớt bột), 200g rau củ hấp (bông cải, cà rốt)."
+        },
+        {
+          "name": "Bữa phụ chiều: Dưa hấu",
+          "recipe": "200g dưa hấu tươi, không thêm đường."
+        },
+        {
+          "name": "Bữa tối: Súp rau củ và cá hấp",
+          "recipe": "1 bát súp rau củ (bí đỏ, cà rốt, cần tây), 100g cá hấp với gừng và hành lá."
+        }
+      ]
+    },
+    {
+      "id": "15",
+      "name": "Chế độ ăn giảm cân 2",
+      "calories": 1800,
+      "bmiRange": "25-29.9",
+      "meals": [
+        {
+          "name": "Bữa sáng: Trứng luộc và bánh mì",
+          "recipe": "2 quả trứng luộc, 1 lát bánh mì nguyên cám."
+        },
+        {
+          "name": "Bữa phụ sáng: Cam và trà xanh",
+          "recipe": "1 quả cam tươi, 1 cốc trà xanh không đường."
+        },
+        {
+          "name": "Bữa trưa: Gạo lứt, gà luộc và rau",
+          "recipe": "80g gạo lứt, 150g ức gà luộc, 150g rau củ luộc."
+        },
+        {
+          "name": "Bữa phụ chiều: Dưa chuột và cà chua",
+          "recipe": "100g dưa chuột, 100g cà chua bi."
+        },
+        {
+          "name": "Bữa tối: Súp gà rau củ",
+          "recipe": "1 bát súp gà (100g ức gà, bí đỏ, cà rốt), 50g rau xanh."
+        }
+      ]
+    },
+    {
+      "id": "16",
+      "name": "Chế độ ăn giảm cân 3",
+      "calories": 1800,
+      "bmiRange": "25-29.9",
+      "meals": [
+        {
+          "name": "Bữa sáng: Yến mạch và táo",
+          "recipe": "40g yến mạch nấu với 150ml nước, 1 quả táo nhỏ."
+        },
+        {
+          "name": "Bữa phụ sáng: Dâu tây và trà",
+          "recipe": "100g dâu tây tươi, 1 cốc trà không đường."
+        },
+        {
+          "name": "Bữa trưa: Cá nướng và rau củ",
+          "recipe": "150g cá nướng, 200g rau củ hấp (bí xanh, cà rốt)."
+        },
+        {
+          "name": "Bữa phụ chiều: Thanh long",
+          "recipe": "150g thanh long tươi."
+        },
+        {
+          "name": "Bữa tối: Salad tôm và bơ",
+          "recipe": "100g tôm luộc, nửa quả bơ, 150g rau xanh trộn dầu ô liu."
+        }
+      ]
+    },
+    {
+      "id": "17",
+      "name": "Chế độ ăn giảm cân 4",
+      "calories": 1800,
+      "bmiRange": "25-29.9",
+      "meals": [
+        {
+          "name": "Bữa sáng: Sữa chua và hạt chia",
+          "recipe": "150g sữa chua không đường, 1 thìa hạt chia, 50g dâu tây."
+        },
+        {
+          "name": "Bữa phụ sáng: Ổi và trà xanh",
+          "recipe": "1 quả ổi nhỏ, 1 cốc trà xanh không đường."
+        },
+        {
+          "name": "Bữa trưa: Gạo lứt, bò xào rau",
+          "recipe": "80g gạo lứt, 120g thịt bò xào rau cần, 100g rau luộc."
+        },
+        {
+          "name": "Bữa phụ chiều: Dưa hấu",
+          "recipe": "150g dưa hấu tươi."
+        },
+        {
+          "name": "Bữa tối: Súp cá và rau xanh",
+          "recipe": "1 bát súp cá (100g cá, bí đỏ), 100g rau cải luộc."
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Chế độ ăn giảm béo",
+      "calories": 1500,
+      "bmiRange": "≥30",
+      "meals": [
+        {
+          "name": "Bữa sáng: Yến mạch và sữa chua",
+          "recipe": "50g yến mạch trộn với 150g sữa chua Hy Lạp không đường, thêm 1 thìa hạt chia."
+        },
+        {
+          "name": "Bữa phụ sáng: Dưa chuột",
+          "recipe": "1 quả dưa chuột tươi, cắt lát."
+        },
+        {
+          "name": "Bữa trưa: Cá hấp và rau củ luộc",
+          "recipe": "100g cá hấp với gừng, 200g rau củ luộc (cải xanh, cà rốt, su su)."
+        },
+        {
+          "name": "Bữa phụ chiều: Nửa quả bưởi",
+          "recipe": "Nửa quả bưởi tươi, không thêm đường."
+        },
+        {
+          "name": "Bữa tối: Salad ức gà",
+          "recipe": "100g ức gà nướng, trộn với 150g rau xanh (xà lách, dưa leo) và nước sốt giấm táo."
+        }
+      ]
+    },
+    {
+      "id": "18",
+      "name": "Chế độ ăn giảm béo 2",
+      "calories": 1500,
+      "bmiRange": "≥30",
+      "meals": [
+        {
+          "name": "Bữa sáng: Trứng luộc và rau xanh",
+          "recipe": "2 quả trứng luộc, 150g rau xà lách trộn giấm."
+        },
+        {
+          "name": "Bữa phụ sáng: Táo",
+          "recipe": "1 quả táo nhỏ (100g)."
+        },
+        {
+          "name": "Bữa trưa: Gà nướng và rau củ",
+          "recipe": "100g ức gà nướng, 200g rau củ luộc (bí xanh, cà rốt)."
+        },
+        {
+          "name": "Bữa phụ chiều: Dưa leo",
+          "recipe": "150g dưa leo cắt lát."
+        },
+        {
+          "name": "Bữa tối: Súp bí đỏ và cá",
+          "recipe": "1 bát súp bí đỏ (150g bí), 100g cá hấp."
+        }
+      ]
+    },
+    {
+      "id": "19",
+      "name": "Chế độ ăn giảm béo 3",
+      "calories": 1500,
+      "bmiRange": "≥30",
+      "meals": [
+        {
+          "name": "Bữa sáng: Yến mạch và dâu",
+          "recipe": "40g yến mạch nấu với 150ml nước, 100g dâu tây."
+        },
+        {
+          "name": "Bữa phụ sáng: Thanh long",
+          "recipe": "100g thanh long tươi."
+        },
+        {
+          "name": "Bữa trưa: Cá luộc và rau cải",
+          "recipe": "100g cá luộc, 200g rau cải luộc, 1 thìa nước mắm."
+        },
+        {
+          "name": "Bữa phụ chiều: Nửa quả bưởi",
+          "recipe": "Nửa quả bưởi tươi."
+        },
+        {
+          "name": "Bữa tối: Salad gà rau củ",
+          "recipe": "100g ức gà luộc, 150g rau củ (xà lách, cà chua) trộn giấm."
+        }
+      ]
+    },
+    {
+      "id": "20",
+      "name": "Chế độ ăn giảm béo 4",
+      "calories": 1500,
+      "bmiRange": "≥30",
+      "meals": [
+        {
+          "name": "Bữa sáng: Sữa chua và hạt óc chó",
+          "recipe": "150g sữa chua không đường, 10g hạt óc chó."
+        },
+        {
+          "name": "Bữa phụ sáng: Cam",
+          "recipe": "1 quả cam nhỏ."
+        },
+        {
+          "name": "Bữa trưa: Tôm luộc và rau xanh",
+          "recipe": "100g tôm luộc, 200g rau xanh luộc (rau muống, cải)."
+        },
+        {
+          "name": "Bữa phụ chiều: Dưa hấu",
+          "recipe": "100g dưa hấu tươi."
+        },
+        {
+          "name": "Bữa tối: Súp rau củ và trứng",
+          "recipe": "1 bát súp rau củ (bí đỏ, cà rốt), 1 quả trứng luộc."
+        }
+      ]
+    }
+  ],
+  "blogs": [
+    {
+      "id": 1,
+      "userId": "1",
+      "title": "First Blog",
+      "content": "This is the first blog content.",
+      "imageUrl": "https://scontent.fhan14-4.fna.fbcdn.net/v/t39.30808-6/480208170_1335797421207679_1546409666488955229_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_ohc=h5m9XAgr1Y0Q7kNvgGJW_0o&_nc_oc=AdhDy1teB7a52QbAjQK62z1M6V6xiZxC0DGBQH01zwNL2QgTM4gbxny-pb5jGpOdo5s&_nc_zt=23&_nc_ht=scontent.fhan14-4.fna&_nc_gid=lB4u6sW2-s0EYyUVueTYvA&oh=00_AYHxG0iHcKHfcslr9ndxwQ1JH1vwKRNnRbg5JayFGJ4LDA&oe=67DCDA63",
+      "createdAt": "2025-03-16T10:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "userId": "2",
+      "title": "Second Blog",
+      "content": "This is the second blog content.",
+      "imageUrl": "https://scontent.fhan14-4.fna.fbcdn.net/v/t39.30808-6/480208170_1335797421207679_1546409666488955229_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_ohc=h5m9XAgr1Y0Q7kNvgGJW_0o&_nc_oc=AdhDy1teB7a52QbAjQK62z1M6V6xiZxC0DGBQH01zwNL2QgTM4gbxny-pb5jGpOdo5s&_nc_zt=23&_nc_ht=scontent.fhan14-4.fna&_nc_gid=lB4u6sW2-s0EYyUVueTYvA&oh=00_AYHxG0iHcKHfcslr9ndxwQ1JH1vwKRNnRbg5JayFGJ4LDA&oe=67DCDA63",
+      "createdAt": "2025-03-17T12:00:00.000Z"
+    },
+    {
+      "id": 3,
+      "userId": "2845",
+      "title": "Another Blog",
+      "content": "Another blog content from user123.",
+      "imageUrl": "https://scontent.fhan14-4.fna.fbcdn.net/v/t39.30808-6/480208170_1335797421207679_1546409666488955229_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_ohc=h5m9XAgr1Y0Q7kNvgGJW_0o&_nc_oc=AdhDy1teB7a52QbAjQK62z1M6V6xiZxC0DGBQH01zwNL2QgTM4gbxny-pb5jGpOdo5s&_nc_zt=23&_nc_ht=scontent.fhan14-4.fna&_nc_gid=lB4u6sW2-s0EYyUVueTYvA&oh=00_AYHxG0iHcKHfcslr9ndxwQ1JH1vwKRNnRbg5JayFGJ4LDA&oe=67DCDA63",
+      "createdAt": "2025-03-17T14:00:00.000Z"
     }
   ]
 }

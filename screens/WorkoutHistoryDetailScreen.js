@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { View, Text, TextInput, Button, StyleSheet, Alert } from "react-native";
+import { CommonActions } from "@react-navigation/native"; // 🔥 Import CommonActions
 import api from "../api";
 
 const WorkoutHistoryDetailScreen = ({ route, navigation }) => {
@@ -27,7 +28,14 @@ const WorkoutHistoryDetailScreen = ({ route, navigation }) => {
         .patch(`/workoutHistory/${sessionId}`, { exercises: updatedExercises })
         .then(() => {
           Alert.alert("Thành công", "Cập nhật bài tập thành công!");
-          navigation.goBack();
+
+          navigation.goBack(
+            null,
+            CommonActions.reset({
+              index: 0,
+              routes: [{ name: "Home" }, { name: "WorkoutHistory" }],
+            })
+          );
         })
         .catch((error) => {
           console.error("Lỗi khi cập nhật:", error);

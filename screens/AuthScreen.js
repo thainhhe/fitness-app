@@ -58,11 +58,11 @@ const AuthScreen = ({ navigation }) => {
           title="Đăng ký"
           onPress={() => navigation.navigate("Register")}
         />
-        <Button
-          title="Quên mật khẩu"
-          onPress={() => navigation.navigate("ForgotPassword")}
-        />
       </View>
+      <Button
+        title="Quên mật khẩu"
+        onPress={() => navigation.navigate("ForgotPassword")}
+      />
     </View>
   );
 };
@@ -88,6 +88,7 @@ const styles = StyleSheet.create({
   },
   buttonGroup: {
     marginTop: 10,
+    marginBottom: 10
   },
 });
 

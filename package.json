@@ -21,6 +21,7 @@
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
     "expo": "~52.0.37",
+    "expo-image-picker": "~16.0.6",
     "expo-status-bar": "~2.0.1",
     "express": "^4.21.2",
     "json-server": "^1.0.0-beta.3",

@@ -10,6 +10,7 @@ import {
 } from "react-native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import api from "../api";
+import BlogSection from "./blogs/components/BlogSection";
 
 const HomeScreen = ({ navigation }) => {
   const [exercises, setExercises] = useState([]);
@@ -56,6 +57,14 @@ const HomeScreen = ({ navigation }) => {
         >
           <Text style={styles.progressButtonText}>Lịch sử luyện tập</Text>
         </TouchableOpacity>
+
+          {/* BMI calculate and meal plan for BMI */}
+        <TouchableOpacity
+          style={styles.progressButton}
+          onPress={() => navigation.navigate("BMIGuide")}
+        >
+          <Text style={styles.progressButtonText}>Xem chế độ ăn dựa vào chỉ số BMI</Text>
+        </TouchableOpacity>
       </View>
 
       {/* Chương trình tập luyện */}
@@ -85,6 +94,9 @@ const HomeScreen = ({ navigation }) => {
           </Text>
         </TouchableOpacity>
       </View>
+
+      {/* Blogs contents */}
+      <BlogSection navigation={navigation}/>
 
       {/* Bài tập gợi ý */}
       <View style={styles.section}>

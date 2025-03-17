@@ -1,4 +1,24 @@
 {
+  "notebooks": [
+    {
+      "id": 1,
+      "title": "Bạn thuộc tạng người nào",
+      "content": "Bài viết này sẽ giúp bạn xác định tạng người của mình và từ đó chọn ra những bài tập và chế độ dinh dưỡng phù hợp nhất. Có ba tạng người chính:\n\n1. Ectomorph: Người có thân hình gầy, xương nhỏ, khó tăng cân nhưng dễ giảm mỡ. Các bài tập phù hợp bao gồm: Đẩy ngực ngang, Đẩy ngực trên, Ép ngực, Hít đất. Nên ăn nhiều protein và carbohydrate để tăng cơ.\n\n2. Mesomorph: Người có thân hình cân đối, cơ bắp phát triển tốt, dễ tăng cơ và giảm mỡ. Các bài tập đề xuất: Deadlift, Squat, Pull-up, Bench Press. Chế độ ăn cần cân bằng giữa protein, carbohydrate và chất béo tốt.\n\n3. Endomorph: Người có thân hình tròn, dễ tăng cân và khó giảm mỡ. Các bài tập nên tập trung vào cardio và rèn luyện sức mạnh như: Chạy bộ, Đạp xe, HIIT, Plank. Hạn chế ăn đồ ngọt và thức ăn nhanh, ưu tiên protein nạc và rau xanh.\n\nTừ đó, hãy lựa chọn phương pháp tập luyện và dinh dưỡng phù hợp nhất cho bản thân bạn!",
+      "image": "https://cdn.dribbble.com/users/245474/screenshots/6971492/body_types_4x.png"
+    },
+    {
+      "id": 2,
+      "title": "Béo bụng",
+      "content": "Béo bụng là vấn đề phổ biến không chỉ ảnh hưởng đến thẩm mỹ mà còn có thể gây ra nhiều vấn đề về sức khỏe. Nguyên nhân gây béo bụng bao gồm: ăn uống không hợp lý, lười vận động, stress và di truyền.\n\nĐể giảm béo bụng hiệu quả, bạn cần kết hợp giữa chế độ ăn uống khoa học và tập luyện thể dục đều đặn:\n\n1. Bài tập Cardio: Giúp đốt cháy calo và mỡ thừa toàn thân, bao gồm: Chạy bộ, Đạp xe, Bơi lội.\n\n2. Bài tập Sức mạnh: Xây dựng cơ bắp, thúc đẩy quá trình trao đổi chất. Các bài tập gồm: Squat, Deadlift, Lunges, Leg Press.\n\n3. Chế độ ăn uống: Hạn chế đường, tinh bột tinh chế, thức ăn nhanh và đồ uống có gas. Ưu tiên thực phẩm giàu protein, rau xanh và trái cây.\n\nHãy duy trì một thói quen sống lành mạnh để giảm mỡ bụng một cách tự nhiên và an toàn.",
+      "image": "https://th.bing.com/th/id/R.be15387fb427c4c68f2c81db4164307e?rik=8NLGxM48YReLJQ&pid=ImgRaw&r=0"
+    },
+    {
+      "id": 3,
+      "title": "Cách sở hữu cơ bụng hoàn hảo",
+      "content": "Để sở hữu cơ bụng hoàn hảo, bạn cần kết hợp giữa chế độ ăn uống hợp lý và các bài tập chuyên biệt:\n\n1. Chế độ ăn uống: Hạn chế đường, tinh bột tinh chế, và thức ăn nhiều dầu mỡ. Tăng cường rau xanh, protein nạc (như thịt gà, cá, trứng), và bổ sung các loại hạt giàu dinh dưỡng.\n\n2. Các bài tập cơ bụng phổ biến:\n  - Crunches: Tác động mạnh vào vùng bụng trên.\n  - Plank: Giúp rèn luyện cơ bụng dưới và cơ lưng dưới.\n  - Leg Raises: Nhắm vào cơ bụng dưới.\n  - Russian Twist: Tăng cường sức mạnh và độ linh hoạt của cơ xiên.\n\n3. Kết hợp tập cardio: Giúp đốt cháy mỡ thừa toàn thân, giúp các nhóm cơ hiện rõ hơn. Có thể lựa chọn các bài tập như chạy bộ, đạp xe hoặc bơi lội.\n\n4. Nghỉ ngơi hợp lý: Ngủ đủ giấc và tránh căng thẳng cũng rất quan trọng trong việc hình thành cơ bụng săn chắc.\n\nHãy kiên trì và thực hiện theo một kế hoạch cụ thể để đạt được mục tiêu cơ bụng hoàn hảo của bạn!",
+      "image": "https://th.bing.com/th/id/OIP.RAGRhd3f8nxWLnaaK1IJNAHaEK?rs=1&pid=ImgDetMain"
+    }
+  ],
   "users": [
     {
       "id": "1",
@@ -22,6 +42,14 @@
       "verified": true,
       "verificationCode": "340387",
       "resetCode": null
+    },
+    {
+      "id": "8484",
+      "name": "duy01",
+      "email": "vuducduy0503@gmail.com",
+      "password": "123456",
+      "verified": true,
+      "verificationCode": "934084"
     }
   ],
   "exercises": [
@@ -486,6 +514,17 @@
       "thigh": null,
       "workoutTime": 50,
       "liftingWeight": null
+    },
+    {
+      "id": "c1f6",
+      "userId": "1",
+      "date": "2025-03-16",
+      "weight": 70,
+      "chest": null,
+      "waist": null,
+      "thigh": null,
+      "workoutTime": 60,
+      "liftingWeight": 20
     }
   ],
   "workoutHistory": [
@@ -498,17 +537,47 @@
         {
           "id": "1",
           "completed": true,
-          "note": "Cảm thấy tốt, tập đủ reps"
+          "note": "Cảm thấy tốt, tập đủ reps hahaha"
         },
         {
           "id": "2",
           "completed": true,
-          "note": ""
+          "note": "hehe"
         },
         {
           "id": "3",
           "completed": true,
-          "note": "Cần cải thiện tư thế"
+          "note": "Cần cải thiện tư thế yahoo"
+        },
+        {
+          "id": "6",
+          "completed": true,
+          "note": "Done 2"
+        },
+        {
+          "id": "5",
+          "completed": true,
+          "note": "hello"
+        },
+        {
+          "id": "4",
+          "completed": true,
+          "note": "Done 3\n"
+        },
+        {
+          "id": "11",
+          "completed": true,
+          "note": "done"
+        },
+        {
+          "id": "14",
+          "completed": true,
+          "note": "test"
+        },
+        {
+          "id": "8",
+          "completed": false,
+          "note": ""
         }
       ]
     },

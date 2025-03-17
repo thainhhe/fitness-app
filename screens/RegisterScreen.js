@@ -45,6 +45,15 @@ const RegisterScreen = ({ navigation }) => {
         password,
         verified: false,
         verificationCode,
+        userProfile: {
+          dob: "", // Ngày sinh trống
+          gender: "", // Giới tính trống
+          avatar: "", // Avatar trống
+          bio: "", // Tiểu sử trống
+          job: "", // Nghề nghiệp trống
+          fitnessGoal: "", // Mục tiêu tập luyện trống
+          age: "", // Tuổi trống
+      },
       });
 
       console.log("✅ Lưu user thành công:", saveRes.data);

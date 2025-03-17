@@ -28,7 +28,7 @@ const RegisterScreen = ({ navigation }) => {
     try {
       // Gửi email xác thực
       const emailRes = await fetch(
-        "http://192.168.100.140:5001/send-verification",
+        "http://192.100.10.103:5001/send-verification",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },

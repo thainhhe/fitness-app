@@ -7,13 +7,14 @@
       "password": "123456",
       "verified": true,
       "userProfile": {
-        "age": 25,
-        "dob": "1999-05-15",
+        "dob": "2001-05-19",
         "gender": "Male",
-        "avatar": "",
+        "avatar": "file:///var/mobile/Containers/Data/Application/C8C41F7A-CEC6-44B2-8E54-A73D40A3944B/Library/Caches/ExponentExperienceData/@anonymous/FitnessOnlineClone-3a366e7e-1c38-4f25-807c-d04655004afa/ImagePicker/F45CFB39-1DB3-47BE-8F8B-4FF96C6E72AE.jpg",
         "bio": "Yêu thích tập gym, mong muốn có body săn chắc.",
-        "job": "Nhân viên văn phòng",
-        "fitnessGoal": "Giảm mỡ, tăng cơ bắp"
+        "job": "Nhân viên văn phòng cu",
+        "fitnessGoal": "Giảm mỡ, tăng cơ bắp",
+        "age": 23,
+        "name": "THÁI"
       }
     },
     {
@@ -41,8 +42,8 @@
       "verificationCode": "340387",
       "resetCode": null,
       "userProfile": {
-        "dob": "2000-02-18",
         "age": 24,
+        "dob": "2001-02-18",
         "gender": "Male",
         "avatar": "",
         "bio": "Chạy bộ mỗi sáng, rèn luyện sức bền.",
@@ -513,6 +514,17 @@
       "thigh": null,
       "workoutTime": 50,
       "liftingWeight": null
+    },
+    {
+      "id": "63f2",
+      "userId": "1",
+      "date": "2025-03-16",
+      "weight": 70,
+      "chest": 60,
+      "waist": 65,
+      "thigh": 66,
+      "workoutTime": 60,
+      "liftingWeight": 5
     }
   ],
   "workoutHistory": [
@@ -557,42 +569,52 @@
         },
         {
           "id": "7",
-          "completed": false,
+          "completed": true,
           "note": "Hhhh"
         },
         {
           "id": "5",
-          "completed": false,
-          "note": "Okeeee"
+          "completed": true,
+          "note": ""
         },
         {
           "id": "6",
-          "completed": false,
+          "completed": true,
           "note": "Yeahh"
         }
       ]
     },
     {
-      "id": "99c8",
+      "id": "4a70",
       "userId": "1",
       "date": "2025-03-15",
-      "workoutName": "Dumbbell Fly",
+      "workoutName": "Squat",
       "exercises": [
         {
-          "id": "11",
+          "id": "2",
           "completed": true,
-          "note": "Oke"
+          "note": ""
+        },
+        {
+          "id": "4",
+          "completed": true,
+          "note": ""
         }
       ]
     },
     {
-      "id": "c42e",
-      "userId": "2",
+      "id": "e41c",
+      "userId": "1",
       "date": "2025-03-16",
-      "workoutName": "Burpees",
+      "workoutName": "Push-up",
       "exercises": [
         {
-          "id": "14",
+          "id": "1",
+          "completed": true,
+          "note": "da tap xong"
+        },
+        {
+          "id": "3",
           "completed": true,
           "note": ""
         }

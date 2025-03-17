@@ -10,6 +10,7 @@ import {
 } from "react-native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import api from "../api";
+import Icon from "react-native-vector-icons/FontAwesome";
 
 const HomeScreen = ({ navigation }) => {
   const [exercises, setExercises] = useState([]);
@@ -32,10 +33,26 @@ const HomeScreen = ({ navigation }) => {
       <Text style={styles.header}>
         Chào mừng {user?.name} đến với Fitness Online
       </Text>
+      
 
       {/* Tiến trình cá nhân */}
       <View style={styles.progressContainer}>
         <Text style={styles.sectionTitle}>Tiến trình của bạn</Text>
+        <TouchableOpacity
+    style={{
+      position: "absolute",
+      top: 10,
+      right: 10,
+      padding: 5,
+      backgroundColor: "#1e90ff",
+      borderRadius: 5,
+      alignItems: "center",
+      justifyContent: "center",
+    }}
+    onPress={() => navigation.navigate("Profile", { userId: user.id })}
+  >
+    <Icon name="user" size={24} color="white" />
+  </TouchableOpacity>
         <TouchableOpacity
           style={styles.progressButton}
           onPress={() => navigation.navigate("Progress", { userId: user?.id })}
@@ -125,6 +142,12 @@ const styles = StyleSheet.create({
     marginBottom: 20,
     textAlign: "center",
   },
+  menuButton: {
+    padding: 10,
+    backgroundColor: "#ddd",
+    borderRadius: 5,
+  },
+
   progressContainer: {
     backgroundColor: "#ffdd57",
     padding: 15,

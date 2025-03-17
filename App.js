@@ -16,6 +16,8 @@ import AddProgressScreen from "./screens/AddProgressScreen";
 import WorkoutCompletionScreen from "./screens/WorkoutCompletionScreen";
 import WorkoutHistoryScreen from "./screens/WorkoutHistoryScreen";
 import WorkoutHistoryDetailScreen from "./screens/WorkoutHistoryDetailScreen";
+import Notebook from "./screens/Notebook";
+import NotebookDetail from "./screens/NotebookDetail";
 
 const Stack = createStackNavigator();
 
@@ -35,6 +37,8 @@ export default function App() {
         <Stack.Screen name="ExerciseDetail" component={ExerciseDetailScreen} />
         <Stack.Screen name="Progress" component={ProgressScreen} />
         <Stack.Screen name="AddProgress" component={AddProgressScreen} />
+        <Stack.Screen name="Notebook" component={Notebook} />
+        <Stack.Screen name="NotebookDetail" component={NotebookDetail} />
         <Stack.Screen
           name="WorkoutCompletion"
           component={WorkoutCompletionScreen}

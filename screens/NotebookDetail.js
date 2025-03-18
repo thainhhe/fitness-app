@@ -1,24 +1,24 @@
 import React from 'react';
-import { View, Text, Image, StyleSheet } from 'react-native';
+import { View, Text, Image, StyleSheet, ScrollView } from 'react-native';
 
 const NotebookDetail = ({ route }) => {
   const { notebook } = route.params;
 
   return (
-    <View style={styles.container}>
-       <Image 
+    <ScrollView contentContainerStyle={styles.container}>
+      <Image 
         source={{ uri: notebook.image }} 
         style={styles.image} 
       />
       <Text style={styles.title}>{notebook.title}</Text>
       <Text style={styles.content}>{notebook.content}</Text>
-    </View>
+    </ScrollView>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    flexGrow: 1,         // Thay vì flex: 1
     padding: 20,
     backgroundColor: 'white',
   },
@@ -36,6 +36,7 @@ const styles = StyleSheet.create({
   content: {
     fontSize: 16,
     lineHeight: 24,
+    textAlign: 'justify', // Căn đều văn bản cho đẹp hơn
   },
 });
 

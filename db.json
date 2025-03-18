@@ -1,19 +1,19 @@
 {
   "notebooks": [
     {
-      "id": 1,
+      "id": "1",
       "title": "Bạn thuộc tạng người nào",
       "content": "Bài viết này sẽ giúp bạn xác định tạng người của mình và từ đó chọn ra những bài tập và chế độ dinh dưỡng phù hợp nhất. Có ba tạng người chính:\n\n1. Ectomorph: Người có thân hình gầy, xương nhỏ, khó tăng cân nhưng dễ giảm mỡ. Các bài tập phù hợp bao gồm: Đẩy ngực ngang, Đẩy ngực trên, Ép ngực, Hít đất. Nên ăn nhiều protein và carbohydrate để tăng cơ.\n\n2. Mesomorph: Người có thân hình cân đối, cơ bắp phát triển tốt, dễ tăng cơ và giảm mỡ. Các bài tập đề xuất: Deadlift, Squat, Pull-up, Bench Press. Chế độ ăn cần cân bằng giữa protein, carbohydrate và chất béo tốt.\n\n3. Endomorph: Người có thân hình tròn, dễ tăng cân và khó giảm mỡ. Các bài tập nên tập trung vào cardio và rèn luyện sức mạnh như: Chạy bộ, Đạp xe, HIIT, Plank. Hạn chế ăn đồ ngọt và thức ăn nhanh, ưu tiên protein nạc và rau xanh.\n\nTừ đó, hãy lựa chọn phương pháp tập luyện và dinh dưỡng phù hợp nhất cho bản thân bạn!",
       "image": "https://cdn.dribbble.com/users/245474/screenshots/6971492/body_types_4x.png"
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "Béo bụng",
       "content": "Béo bụng là vấn đề phổ biến không chỉ ảnh hưởng đến thẩm mỹ mà còn có thể gây ra nhiều vấn đề về sức khỏe. Nguyên nhân gây béo bụng bao gồm: ăn uống không hợp lý, lười vận động, stress và di truyền.\n\nĐể giảm béo bụng hiệu quả, bạn cần kết hợp giữa chế độ ăn uống khoa học và tập luyện thể dục đều đặn:\n\n1. Bài tập Cardio: Giúp đốt cháy calo và mỡ thừa toàn thân, bao gồm: Chạy bộ, Đạp xe, Bơi lội.\n\n2. Bài tập Sức mạnh: Xây dựng cơ bắp, thúc đẩy quá trình trao đổi chất. Các bài tập gồm: Squat, Deadlift, Lunges, Leg Press.\n\n3. Chế độ ăn uống: Hạn chế đường, tinh bột tinh chế, thức ăn nhanh và đồ uống có gas. Ưu tiên thực phẩm giàu protein, rau xanh và trái cây.\n\nHãy duy trì một thói quen sống lành mạnh để giảm mỡ bụng một cách tự nhiên và an toàn.",
       "image": "https://th.bing.com/th/id/R.be15387fb427c4c68f2c81db4164307e?rik=8NLGxM48YReLJQ&pid=ImgRaw&r=0"
     },
     {
-      "id": 3,
+      "id": "3",
       "title": "Cách sở hữu cơ bụng hoàn hảo",
       "content": "Để sở hữu cơ bụng hoàn hảo, bạn cần kết hợp giữa chế độ ăn uống hợp lý và các bài tập chuyên biệt:\n\n1. Chế độ ăn uống: Hạn chế đường, tinh bột tinh chế, và thức ăn nhiều dầu mỡ. Tăng cường rau xanh, protein nạc (như thịt gà, cá, trứng), và bổ sung các loại hạt giàu dinh dưỡng.\n\n2. Các bài tập cơ bụng phổ biến:\n  - Crunches: Tác động mạnh vào vùng bụng trên.\n  - Plank: Giúp rèn luyện cơ bụng dưới và cơ lưng dưới.\n  - Leg Raises: Nhắm vào cơ bụng dưới.\n  - Russian Twist: Tăng cường sức mạnh và độ linh hoạt của cơ xiên.\n\n3. Kết hợp tập cardio: Giúp đốt cháy mỡ thừa toàn thân, giúp các nhóm cơ hiện rõ hơn. Có thể lựa chọn các bài tập như chạy bộ, đạp xe hoặc bơi lội.\n\n4. Nghỉ ngơi hợp lý: Ngủ đủ giấc và tránh căng thẳng cũng rất quan trọng trong việc hình thành cơ bụng săn chắc.\n\nHãy kiên trì và thực hiện theo một kế hoạch cụ thể để đạt được mục tiêu cơ bụng hoàn hảo của bạn!",
       "image": "https://th.bing.com/th/id/OIP.RAGRhd3f8nxWLnaaK1IJNAHaEK?rs=1&pid=ImgDetMain"
@@ -1236,7 +1236,7 @@
   ],
   "blogs": [
     {
-      "id": 1,
+      "id": "1",
       "userId": "1",
       "title": "First Blog",
       "content": "This is the first blog content.",
@@ -1244,7 +1244,7 @@
       "createdAt": "2025-03-16T10:00:00.000Z"
     },
     {
-      "id": 2,
+      "id": "2",
       "userId": "2",
       "title": "Second Blog",
       "content": "This is the second blog content.",
@@ -1252,12 +1252,281 @@
       "createdAt": "2025-03-17T12:00:00.000Z"
     },
     {
-      "id": 3,
+      "id": "3",
       "userId": "2845",
       "title": "Another Blog",
       "content": "Another blog content from user123.",
       "imageUrl": "https://scontent.fhan14-4.fna.fbcdn.net/v/t39.30808-6/480208170_1335797421207679_1546409666488955229_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_ohc=h5m9XAgr1Y0Q7kNvgGJW_0o&_nc_oc=AdhDy1teB7a52QbAjQK62z1M6V6xiZxC0DGBQH01zwNL2QgTM4gbxny-pb5jGpOdo5s&_nc_zt=23&_nc_ht=scontent.fhan14-4.fna&_nc_gid=lB4u6sW2-s0EYyUVueTYvA&oh=00_AYHxG0iHcKHfcslr9ndxwQ1JH1vwKRNnRbg5JayFGJ4LDA&oe=67DCDA63",
       "createdAt": "2025-03-17T14:00:00.000Z"
+    }
+  ],
+  "workoutSchedules": [
+    {
+      "id": "e60b",
+      "userId": "1",
+      "name": "Xin chào",
+      "time": "19:43",
+      "days": [
+        2
+      ]
+    },
+    {
+      "id": "6b09",
+      "userId": "1",
+      "name": "Xin chào",
+      "time": "19:43",
+      "days": [
+        2
+      ]
+    },
+    {
+      "id": "4369",
+      "userId": "1",
+      "name": "Tập thể Dục",
+      "time": "09:00",
+      "days": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "c5fa",
+      "userId": "1",
+      "name": "Test",
+      "time": "20:46",
+      "days": [
+        2
+      ]
+    },
+    {
+      "id": "1d42",
+      "userId": "1",
+      "name": "Tessy",
+      "time": "20:46",
+      "days": [
+        0
+      ]
+    },
+    {
+      "id": "3b69",
+      "userId": "1",
+      "name": "T",
+      "time": "20:46",
+      "days": [
+        6
+      ]
+    },
+    {
+      "id": "4b71",
+      "userId": "1",
+      "name": "7",
+      "time": "20:46",
+      "days": [
+        5
+      ]
+    },
+    {
+      "id": "d15b",
+      "userId": "1",
+      "name": "Bao",
+      "time": "21:04",
+      "days": [
+        2
+      ]
+    },
+    {
+      "id": "d789",
+      "userId": "1",
+      "name": "Hello",
+      "time": "21:09",
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "id": "bc5b",
+      "userId": "1",
+      "name": "Hi",
+      "time": "21:20",
+      "days": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "2483",
+      "userId": "1",
+      "name": "Hi",
+      "time": "21:20",
+      "days": [
+        2
+      ]
+    },
+    {
+      "id": "e1ad",
+      "userId": "1",
+      "name": "Hi",
+      "time": "21:23",
+      "days": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "15a3",
+      "userId": "1",
+      "name": "Hello",
+      "time": "21:48",
+      "days": [
+        2
+      ]
+    },
+    {
+      "id": "8dc1",
+      "userId": "1",
+      "name": "Hello",
+      "time": "21:49",
+      "days": [
+        3
+      ]
+    },
+    {
+      "id": "d550",
+      "userId": "1",
+      "name": "Xin chào",
+      "time": "21:49",
+      "days": [
+        4
+      ]
+    },
+    {
+      "id": "a954",
+      "userId": "1",
+      "name": "9h",
+      "time": "21:55",
+      "days": [
+        2
+      ]
+    },
+    {
+      "id": "f4e9",
+      "userId": "1",
+      "name": "Xin choa Bao",
+      "time": "21:55",
+      "days": [
+        2
+      ]
+    },
+    {
+      "id": "dc67",
+      "userId": "1",
+      "name": "Xin chào Bảo",
+      "time": "21:56",
+      "days": [
+        2
+      ]
+    },
+    {
+      "id": "a3a5",
+      "userId": "1",
+      "name": "Xin chào Bảo",
+      "time": "21:57",
+      "days": [
+        3,
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "202c",
+      "userId": "1",
+      "name": "Xin chào Bảo",
+      "time": "22:00",
+      "days": [
+        3
+      ]
+    },
+    {
+      "id": "9562",
+      "userId": "1",
+      "name": "22hh",
+      "time": "22:01",
+      "days": [
+        2
+      ]
+    },
+    {
+      "id": "14d4",
+      "userId": "1",
+      "name": "22h06",
+      "time": "22:06",
+      "days": [
+        2
+      ]
+    },
+    {
+      "id": "64d9",
+      "userId": "1",
+      "name": "10h7",
+      "time": "22:07",
+      "days": [
+        3
+      ]
+    },
+    {
+      "id": "6a12",
+      "userId": "1",
+      "name": "Hello xong rồi",
+      "time": "22:30",
+      "days": [
+        2
+      ]
+    },
+    {
+      "id": "15fc",
+      "userId": "1",
+      "name": "Hellooooo",
+      "time": "22:32",
+      "days": [
+        2
+      ]
+    },
+    {
+      "id": "e1e0",
+      "userId": "1",
+      "name": "Xin chào",
+      "time": "21:32",
+      "days": [
+        2
+      ]
+    },
+    {
+      "id": "7a0a",
+      "userId": "1",
+      "name": "Xin chào",
+      "time": "22:33",
+      "days": [
+        2
+      ]
+    },
+    {
+      "id": "390c",
+      "userId": "1",
+      "name": "Xía đi",
+      "time": "22:34",
+      "days": [
+        2
+      ]
     }
   ]
 }

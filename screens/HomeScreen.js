@@ -30,102 +30,98 @@ const HomeScreen = ({ navigation }) => {
 
   return (
     <>
-    <ScrollView style={styles.container}>
-      {/* Header */}
-      <Text style={styles.header}>
-        Chào mừng {user?.name} đến với Fitness Online
-      </Text>
+      <ScrollView style={styles.container}>
+        {/* Header */}
+        <Text style={styles.header}>
+          Chào mừng {user?.name} đến với Fitness Online
+        </Text>
 
-      {/* Tiến trình cá nhân */}
-      <View style={styles.progressContainer}>
-        <Text style={styles.sectionTitle}>Tiến trình của bạn</Text>
-        <TouchableOpacity
-          style={styles.progressButton}
-          onPress={() => navigation.navigate("Progress", { userId: user?.id })}
-        >
-          <Text style={styles.progressButtonText}>Xem Tiến Trình</Text>
-        </TouchableOpacity>
-        <TouchableOpacity
-          style={styles.progressButton}
-          onPress={() =>
-            navigation.navigate("AddProgress", { userId: user?.id })
-          }
-        >
-          <Text style={styles.progressButtonText}>Thêm Tiến Trình</Text>
-        </TouchableOpacity>
-        <TouchableOpacity
-          style={styles.progressButton}
-          onPress={() => navigation.navigate("WorkoutHistory")}
-        >
-          <Text style={styles.progressButtonText}>Lịch sử luyện tập</Text>
-        </TouchableOpacity>
+        {/* Tiến trình cá nhân */}
+        <View style={styles.progressContainer}>
+          <Text style={styles.sectionTitle}>Tiến trình của bạn</Text>
+          <TouchableOpacity
+            style={styles.progressButton}
+            onPress={() => navigation.navigate("Progress", { userId: user?.id })}
+          >
+            <Text style={styles.progressButtonText}>Xem Tiến Trình</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={styles.progressButton}
+            onPress={() => navigation.navigate("AddProgress", { userId: user?.id })}
+          >
+            <Text style={styles.progressButtonText}>Thêm Tiến Trình</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={styles.progressButton}
+            onPress={() => navigation.navigate("WorkoutHistory")}
+          >
+            <Text style={styles.progressButtonText}>Lịch sử luyện tập</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={styles.progressButton}
+            onPress={() => navigation.navigate("BMIGuide")}
+          >
+            <Text style={styles.progressButtonText}>Xem chế độ ăn dựa vào chỉ số BMI</Text>
+          </TouchableOpacity>
 
-          {/* BMI calculate and meal plan for BMI */}
-        <TouchableOpacity
-          style={styles.progressButton}
-          onPress={() => navigation.navigate("BMIGuide")}
-        >
-          <Text style={styles.progressButtonText}>Xem chế độ ăn dựa vào chỉ số BMI</Text>
-        </TouchableOpacity>
-      </View>
+          {/* Nút chuyển đến màn hình hẹn giờ */}
+          <TouchableOpacity
+            style={styles.progressButton}
+            onPress={() => navigation.navigate("ReminderScreen")}
+          >
+            <Text style={styles.progressButtonText}>Cài đặt nhắc nhở</Text>
+          </TouchableOpacity>
+        </View>
 
-      {/* Chương trình tập luyện */}
-      <View style={styles.section}>
-        <Text style={styles.sectionTitle}>Chương trình tập luyện</Text>
-        <FlatList
-          horizontal
-          data={workouts}
-          keyExtractor={(item) => item.id.toString()}
-          renderItem={({ item }) => (
-            <TouchableOpacity
-              style={styles.card}
-              onPress={() =>
-                navigation.navigate("ExerciseDetail", { id: item.id })
-              }
-            >
-              <Text style={styles.cardTitle}>{item.name}</Text>
-            </TouchableOpacity>
-          )}
-        />
-        <TouchableOpacity
-          style={styles.workoutButton}
-          onPress={() => navigation.navigate("WorkoutPlan")}
-        >
-          <Text style={styles.workoutButtonText}>
-            Xem Chương Trình Tập Luyện
-          </Text>
-        </TouchableOpacity>
-      </View>
+        {/* Chương trình tập luyện */}
+        <View style={styles.section}>
+          <Text style={styles.sectionTitle}>Chương trình tập luyện</Text>
+          <FlatList
+            horizontal
+            data={workouts}
+            keyExtractor={(item) => item.id.toString()}
+            renderItem={({ item }) => (
+              <TouchableOpacity
+                style={styles.card}
+                onPress={() => navigation.navigate("ExerciseDetail", { id: item.id })}
+              >
+                <Text style={styles.cardTitle}>{item.name}</Text>
+              </TouchableOpacity>
+            )}
+          />
+          <TouchableOpacity
+            style={styles.workoutButton}
+            onPress={() => navigation.navigate("WorkoutPlan")}
+          >
+            <Text style={styles.workoutButtonText}>Xem Chương Trình Tập Luyện</Text>
+          </TouchableOpacity>
+        </View>
 
-      {/* Blogs contents */}
-      <BlogSection navigation={navigation}/>
+        {/* Blogs contents */}
+        <BlogSection navigation={navigation} />
 
-      {/* Bài tập gợi ý */}
-      <View style={styles.section}>
-        <Text style={styles.sectionTitle}>Bài tập gợi ý</Text>
-        <FlatList
-          horizontal
-          data={exercises}
-          keyExtractor={(item) => item.id.toString()}
-          renderItem={({ item }) => (
-            <TouchableOpacity
-              style={styles.exerciseCard}
-              onPress={() =>
-                navigation.navigate("ExerciseDetail", { id: item.id })
-              }
-            >
-              <Image
-                source={{ uri: item.image }}
-                style={styles.exerciseImage}
-              />
-              <Text style={styles.exerciseTitle}>{item.name}</Text>
-            </TouchableOpacity>
-          )}
-        />
-      </View>
-    </ScrollView>
-    {/* Navbar */}
-    <View style={styles.navbar}>
+        {/* Bài tập gợi ý */}
+        <View style={styles.section}>
+          <Text style={styles.sectionTitle}>Bài tập gợi ý</Text>
+          <FlatList
+            horizontal
+            data={exercises}
+            keyExtractor={(item) => item.id.toString()}
+            renderItem={({ item }) => (
+              <TouchableOpacity
+                style={styles.exerciseCard}
+                onPress={() => navigation.navigate("ExerciseDetail", { id: item.id })}
+              >
+                <Image source={{ uri: item.image }} style={styles.exerciseImage} />
+                <Text style={styles.exerciseTitle}>{item.name}</Text>
+              </TouchableOpacity>
+            )}
+          />
+        </View>
+      </ScrollView>
+
+      {/* Navbar */}
+      <View style={styles.navbar}>
         <TouchableOpacity
           style={styles.navButton}
           onPress={() => navigation.navigate("Home")}
@@ -163,10 +159,6 @@ const styles = StyleSheet.create({
     padding: 15,
     borderRadius: 10,
     marginBottom: 20,
-  },
-  progressText: {
-    fontSize: 16,
-    color: "#333",
   },
   section: {
     marginBottom: 20,
@@ -232,14 +224,14 @@ const styles = StyleSheet.create({
     backgroundColor: "#D8BFD8",
     padding: 10,
     marginTop: 20,
-    
   },
-  navItem: {
-    padding: 10,
+  navButton: {
+    alignItems: "center",
   },
-  navText: {
-    fontSize: 16,
-    fontWeight: "bold",
+  navButtonText: {
+    color: "white",
+    fontSize: 14,
+    marginTop: 5,
   },
 });
 

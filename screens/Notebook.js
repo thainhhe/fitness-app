@@ -5,7 +5,7 @@ const Notebook = ({ navigation }) => {
   const [notebooks, setNotebooks] = useState([]);
 
   useEffect(() => {
-    fetch('http://192.100.10.103:3001/notebooks')
+    fetch('http://192.168.1.6:3001/notebooks')
       .then(response => response.json())
       .then(data => setNotebooks(data))
       .catch(error => console.error('Error fetching data:', error));

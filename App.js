@@ -16,8 +16,11 @@ import AddProgressScreen from "./screens/AddProgressScreen";
 import WorkoutCompletionScreen from "./screens/WorkoutCompletionScreen";
 import WorkoutHistoryScreen from "./screens/WorkoutHistoryScreen";
 import WorkoutHistoryDetailScreen from "./screens/WorkoutHistoryDetailScreen";
-import MealPlanDetailScreen from "./screens/MealPlanDetailScreen";
-import NutritionSuggestionScreen from "./screens/NutritionSuggestionScreen";
+import Notebook from "./screens/Notebook";
+import NotebookDetail from "./screens/NotebookDetail";
+import BMIScreen from "./screens/BMIScreen";
+import BlogScreen from "./screens/blogs/BlogsScreen";
+
 const Stack = createStackNavigator();
 
 export default function App() {
@@ -36,6 +39,8 @@ export default function App() {
         <Stack.Screen name="ExerciseDetail" component={ExerciseDetailScreen} />
         <Stack.Screen name="Progress" component={ProgressScreen} />
         <Stack.Screen name="AddProgress" component={AddProgressScreen} />
+        <Stack.Screen name="Notebook" component={Notebook} />
+        <Stack.Screen name="NotebookDetail" component={NotebookDetail} />
         <Stack.Screen
           name="WorkoutCompletion"
           component={WorkoutCompletionScreen}
@@ -45,10 +50,9 @@ export default function App() {
           name="WorkoutHistoryDetail"
           component={WorkoutHistoryDetailScreen}
         />
-        <Stack.Screen name="NutritionSuggestion" component={NutritionSuggestionScreen} />
-        <Stack.Screen name="NutritionDetailScreen" component={MealPlanDetailScreen} />
+        <Stack.Screen name="BMIGuide" component={BMIScreen} />
+        <Stack.Screen name="Blogs" component={BlogScreen} />
       </Stack.Navigator>
-      
     </NavigationContainer>
   );
 }

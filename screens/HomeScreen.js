@@ -10,6 +10,8 @@ import {
 } from "react-native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import api from "../api";
+import { MaterialIcons } from "@expo/vector-icons";
+import BlogSection from "./blogs/components/BlogSection";
 
 const HomeScreen = ({ navigation }) => {
   const [exercises, setExercises] = useState([]);
@@ -27,6 +29,7 @@ const HomeScreen = ({ navigation }) => {
   }, []);
 
   return (
+    <>
     <ScrollView style={styles.container}>
       {/* Header */}
       <Text style={styles.header}>
@@ -55,6 +58,14 @@ const HomeScreen = ({ navigation }) => {
           onPress={() => navigation.navigate("WorkoutHistory")}
         >
           <Text style={styles.progressButtonText}>Lịch sử luyện tập</Text>
+        </TouchableOpacity>
+
+          {/* BMI calculate and meal plan for BMI */}
+        <TouchableOpacity
+          style={styles.progressButton}
+          onPress={() => navigation.navigate("BMIGuide")}
+        >
+          <Text style={styles.progressButtonText}>Xem chế độ ăn dựa vào chỉ số BMI</Text>
         </TouchableOpacity>
       </View>
 
@@ -86,6 +97,9 @@ const HomeScreen = ({ navigation }) => {
         </TouchableOpacity>
       </View>
 
+      {/* Blogs contents */}
+      <BlogSection navigation={navigation}/>
+
       {/* Bài tập gợi ý */}
       <View style={styles.section}>
         <Text style={styles.sectionTitle}>Bài tập gợi ý</Text>
@@ -109,17 +123,26 @@ const HomeScreen = ({ navigation }) => {
           )}
         />
       </View>
-       {/* Gợi ý dinh dưỡng */}
-    <View style={styles.section}>
-    <Text style={styles.sectionTitle}>Gợi ý Dinh Dưỡng</Text>
-    <TouchableOpacity
-    style={styles.nutritionButton}
-    onPress={() => navigation.navigate("NutritionSuggestion")}
-    >
-    <Text style={styles.nutritionButtonText}>Xem Gợi Ý Dinh Dưỡng</Text>
-    </TouchableOpacity>
-      </View>
     </ScrollView>
+    {/* Navbar */}
+    <View style={styles.navbar}>
+        <TouchableOpacity
+          style={styles.navButton}
+          onPress={() => navigation.navigate("Home")}
+        >
+          <MaterialIcons name="fitness-center" size={24} color="white" />
+          <Text style={styles.navButtonText}>Kế hoạch tập</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity
+          style={styles.navButton}
+          onPress={() => navigation.navigate("Notebook")}
+        >
+          <MaterialIcons name="book" size={24} color="white" />
+          <Text style={styles.navButtonText}>Sổ tay</Text>
+        </TouchableOpacity>
+      </View>
+    </>
   );
 };
 
@@ -203,16 +226,18 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: "bold",
   },
-  nutritionButton: {
-    backgroundColor: "#dc3545",
-    padding: 15,
-    borderRadius: 10,
-    alignItems: "center",
-    marginBottom: 20,
-    marginTop: 10,
+  navbar: {
+    flexDirection: "row",
+    justifyContent: "space-around",
+    backgroundColor: "#D8BFD8",
+    padding: 10,
+    marginTop: 20,
+    
   },
-  nutritionButtonText: {
-    color: "#fff",
+  navItem: {
+    padding: 10,
+  },
+  navText: {
     fontSize: 16,
     fontWeight: "bold",
   },

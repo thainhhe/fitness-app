@@ -5,6 +5,7 @@ import {
   FlatList,
   TouchableOpacity,
   StyleSheet,
+  ScrollView,
 } from "react-native";
 import api from "../api";
 
@@ -27,39 +28,55 @@ const WorkoutPlanScreen = ({ navigation }) => {
     ? workoutPlans.filter((plan) => plan.goal === selectedGoal)
     : workoutPlans;
 
+  const goalOptions = [
+    { goal: null, name: "Tất cả" },
+    ...[
+      "Tăng cơ",
+      "Giảm cân",
+      "Duy trì thể lực",
+      "Phát triển cơ vai và tay",
+      "Tăng sức mạnh tổng thể",
+    ].map((goal) => ({ goal, name: goal })),
+  ];
+
   return (
     <View style={styles.container}>
       <Text style={styles.header}>Chương trình tập luyện</Text>
 
       {/* Bộ lọc mục tiêu */}
-      <FlatList
-        horizontal
-        data={[
-          { goal: null, name: "Tất cả" },
-          ...[
-            "Tăng cơ",
-            "Giảm cân",
-            "Duy trì thể lực",
-            "Phát triển cơ vai và tay",
-          ].map((goal) => ({ goal, name: goal })),
-        ]}
-        keyExtractor={(item) => item.name}
-        renderItem={({ item }) => (
-          <TouchableOpacity
-            style={[
-              styles.filterButton,
-              selectedGoal === item.goal && styles.activeFilter,
-            ]}
-            onPress={() => setSelectedGoal(item.goal)}
-          >
-            <Text style={styles.filterText}>{item.name}</Text>
-          </TouchableOpacity>
-        )}
-        contentContainerStyle={styles.filterList}
-      />
+      <View style={styles.filterContainer}>
+        <ScrollView
+          horizontal
+          showsHorizontalScrollIndicator={false}
+          contentContainerStyle={styles.filterList}
+        >
+          {goalOptions.map((item) => (
+            <TouchableOpacity
+              key={item.name}
+              style={[
+                styles.filterButton,
+                selectedGoal === item.goal && styles.activeFilter,
+              ]}
+              onPress={() => setSelectedGoal(item.goal)}
+            >
+              <Text
+                style={[
+                  styles.filterText,
+                  selectedGoal === item.goal
+                    ? styles.activeFilterText
+                    : styles.inactiveFilterText,
+                ]}
+              >
+                {item.name}
+              </Text>
+            </TouchableOpacity>
+          ))}
+        </ScrollView>
+      </View>
 
       {/* Danh sách chương trình tập luyện */}
       <FlatList
+        contentContainerStyle={styles.plansContainer}
         data={filteredPlans}
         keyExtractor={(item) => item.id.toString()}
         renderItem={({ item: plan }) => (
@@ -67,6 +84,7 @@ const WorkoutPlanScreen = ({ navigation }) => {
             <Text style={styles.planTitle}>{plan.name}</Text>
             <FlatList
               horizontal
+              showsHorizontalScrollIndicator={false}
               data={plan.days}
               keyExtractor={(item) => item.day.toString()}
               renderItem={({ item }) => (
@@ -85,6 +103,13 @@ const WorkoutPlanScreen = ({ navigation }) => {
             />
           </View>
         )}
+        ListEmptyComponent={
+          <View style={styles.emptyContainer}>
+            <Text style={styles.emptyText}>
+              Không có chương trình tập luyện nào
+            </Text>
+          </View>
+        }
       />
     </View>
   );
@@ -93,26 +118,30 @@ const WorkoutPlanScreen = ({ navigation }) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    padding: 20,
+    padding: 16,
     backgroundColor: "#f8f9fa",
   },
   header: {
     fontSize: 22,
     fontWeight: "bold",
-    marginBottom: 20,
+    marginBottom: 16,
     textAlign: "center",
   },
+  filterContainer: {
+    marginBottom: 16, // Giảm khoảng cách giữa bộ lọc và danh sách
+  },
   filterList: {
-    flexDirection: "row",
-    paddingVertical: 10,
+    paddingVertical: 4,
   },
   filterButton: {
-    backgroundColor: "#ddd",
+    backgroundColor: "#e9ecef",
     paddingVertical: 8,
     paddingHorizontal: 12,
-    borderRadius: 5,
-    marginHorizontal: 5,
-    minWidth: 100,
+    borderRadius: 8,
+    marginHorizontal: 4,
+    width: 100,
+    height: 40,
+    justifyContent: "center",
     alignItems: "center",
   },
   activeFilter: {
@@ -120,28 +149,54 @@ const styles = StyleSheet.create({
   },
   filterText: {
     fontSize: 16,
-    fontWeight: "bold",
-    color: "#fff",
+    fontWeight: "600",
     textAlign: "center",
   },
+  activeFilterText: {
+    color: "#fff",
+  },
+  inactiveFilterText: {
+    color: "#333",
+  },
+  plansContainer: {
+    paddingTop: 0, // Không có khoảng trống ở đầu
+  },
   planContainer: {
-    marginBottom: 20,
+    marginBottom: 16,
+    backgroundColor: "#fff",
+    borderRadius: 8,
+    padding: 12,
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 1 },
+    shadowOpacity: 0.1,
+    shadowRadius: 2,
+    elevation: 2,
   },
   planTitle: {
     fontSize: 18,
     fontWeight: "bold",
-    marginBottom: 10,
+    marginBottom: 12,
   },
   dayCard: {
     backgroundColor: "#1e90ff",
-    padding: 15,
-    borderRadius: 10,
-    marginRight: 10,
+    padding: 14,
+    borderRadius: 8,
+    marginRight: 8,
+    minWidth: 90,
+    alignItems: "center",
   },
   dayText: {
     fontSize: 16,
     color: "#fff",
-    fontWeight: "bold",
+    fontWeight: "600",
+  },
+  emptyContainer: {
+    padding: 20,
+    alignItems: "center",
+  },
+  emptyText: {
+    fontSize: 16,
+    color: "#6c757d",
   },
 });
 

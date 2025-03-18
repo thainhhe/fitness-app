@@ -1312,144 +1312,17 @@
     }
   ],
   "blogs": [
-    {
-      "id": "1",
-      "userId": "1",
-      "title": "First Blog",
-      "content": "This is the first blog content.",
-      "imageUrl": "https://scontent.fhan14-4.fna.fbcdn.net/v/t39.30808-6/480208170_1335797421207679_1546409666488955229_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_ohc=h5m9XAgr1Y0Q7kNvgGJW_0o&_nc_oc=AdhDy1teB7a52QbAjQK62z1M6V6xiZxC0DGBQH01zwNL2QgTM4gbxny-pb5jGpOdo5s&_nc_zt=23&_nc_ht=scontent.fhan14-4.fna&_nc_gid=lB4u6sW2-s0EYyUVueTYvA&oh=00_AYHxG0iHcKHfcslr9ndxwQ1JH1vwKRNnRbg5JayFGJ4LDA&oe=67DCDA63",
-      "createdAt": "2025-03-16T10:00:00.000Z"
-    },
+    
     {
       "id": "2",
       "userId": "2",
-      "title": "Second Blog",
-      "content": "This is the second blog content.",
-      "imageUrl": "https://scontent.fhan14-4.fna.fbcdn.net/v/t39.30808-6/480208170_1335797421207679_1546409666488955229_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_ohc=h5m9XAgr1Y0Q7kNvgGJW_0o&_nc_oc=AdhDy1teB7a52QbAjQK62z1M6V6xiZxC0DGBQH01zwNL2QgTM4gbxny-pb5jGpOdo5s&_nc_zt=23&_nc_ht=scontent.fhan14-4.fna&_nc_gid=lB4u6sW2-s0EYyUVueTYvA&oh=00_AYHxG0iHcKHfcslr9ndxwQ1JH1vwKRNnRbg5JayFGJ4LDA&oe=67DCDA63",
+      "title": "Mọi người đang tập gym không?",
+      "content": "Tập gym 1 buổi chiều nắng",
+      "imageUrl": "https://everybody.org.uk/locations/everybody-alderley-park/gym-2",
       "createdAt": "2025-03-17T12:00:00.000Z"
     }
   ],
   "workoutSchedules": [
-    {
-      "id": "e60b",
-      "userId": "1",
-      "name": "Xin chào",
-      "time": "19:43",
-      "days": [
-        2
-      ]
-    },
-    {
-      "id": "6b09",
-      "userId": "1",
-      "name": "Xin chào",
-      "time": "19:43",
-      "days": [
-        2
-      ]
-    },
-    {
-      "id": "4369",
-      "userId": "1",
-      "name": "Tập thể Dục",
-      "time": "09:00",
-      "days": [
-        1,
-        2,
-        3
-      ]
-    },
-    {
-      "id": "c5fa",
-      "userId": "1",
-      "name": "Test",
-      "time": "20:46",
-      "days": [
-        2
-      ]
-    },
-    {
-      "id": "1d42",
-      "userId": "1",
-      "name": "Tessy",
-      "time": "20:46",
-      "days": [
-        0
-      ]
-    },
-    {
-      "id": "3b69",
-      "userId": "1",
-      "name": "T",
-      "time": "20:46",
-      "days": [
-        6
-      ]
-    },
-    {
-      "id": "4b71",
-      "userId": "1",
-      "name": "7",
-      "time": "20:46",
-      "days": [
-        5
-      ]
-    },
-    {
-      "id": "d15b",
-      "userId": "1",
-      "name": "Bao",
-      "time": "21:04",
-      "days": [
-        2
-      ]
-    },
-    {
-      "id": "d789",
-      "userId": "1",
-      "name": "Hello",
-      "time": "21:09",
-      "days": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ]
-    },
-    {
-      "id": "bc5b",
-      "userId": "1",
-      "name": "Hi",
-      "time": "21:20",
-      "days": [
-        0,
-        1
-      ]
-    },
-    {
-      "id": "2483",
-      "userId": "1",
-      "name": "Hi",
-      "time": "21:20",
-      "days": [
-        2
-      ]
-    },
-    {
-      "id": "e1ad",
-      "userId": "1",
-      "name": "Hi",
-      "time": "21:23",
-      "days": [
-        0,
-        1,
-        2,
-        3
-      ]
-    },
     {
       "id": "15a3",
       "userId": "1",

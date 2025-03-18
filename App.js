@@ -16,14 +16,17 @@ import AddProgressScreen from "./screens/AddProgressScreen";
 import WorkoutCompletionScreen from "./screens/WorkoutCompletionScreen";
 import WorkoutHistoryScreen from "./screens/WorkoutHistoryScreen";
 import WorkoutHistoryDetailScreen from "./screens/WorkoutHistoryDetailScreen";
+import ProfileScreen from "./screens/ProfileScreen";
 import Notebook from "./screens/Notebook";
 import NotebookDetail from "./screens/NotebookDetail";
 import BMIScreen from "./screens/BMIScreen";
 import BlogScreen from "./screens/blogs/BlogsScreen";
-
+import ReminderScreen from "./screens/ReminderScreen";
+import { useEffect } from "react";
 const Stack = createStackNavigator();
 
 export default function App() {
+
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Auth">
@@ -41,6 +44,7 @@ export default function App() {
         <Stack.Screen name="AddProgress" component={AddProgressScreen} />
         <Stack.Screen name="Notebook" component={Notebook} />
         <Stack.Screen name="NotebookDetail" component={NotebookDetail} />
+        <Stack.Screen name="ReminderScreen" component={ReminderScreen} />
         <Stack.Screen
           name="WorkoutCompletion"
           component={WorkoutCompletionScreen}
@@ -50,6 +54,8 @@ export default function App() {
           name="WorkoutHistoryDetail"
           component={WorkoutHistoryDetailScreen}
         />
+        <Stack.Screen name="Profile" component={ProfileScreen} />
+
         <Stack.Screen name="BMIGuide" component={BMIScreen} />
         <Stack.Screen name="Blogs" component={BlogScreen} />
       </Stack.Navigator>

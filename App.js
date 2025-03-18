@@ -16,6 +16,7 @@ import AddProgressScreen from "./screens/AddProgressScreen";
 import WorkoutCompletionScreen from "./screens/WorkoutCompletionScreen";
 import WorkoutHistoryScreen from "./screens/WorkoutHistoryScreen";
 import WorkoutHistoryDetailScreen from "./screens/WorkoutHistoryDetailScreen";
+import ProfileScreen from "./screens/ProfileScreen";
 import Notebook from "./screens/Notebook";
 import NotebookDetail from "./screens/NotebookDetail";
 import BMIScreen from "./screens/BMIScreen";
@@ -53,6 +54,8 @@ export default function App() {
           name="WorkoutHistoryDetail"
           component={WorkoutHistoryDetailScreen}
         />
+        <Stack.Screen name="Profile" component={ProfileScreen} />
+
         <Stack.Screen name="BMIGuide" component={BMIScreen} />
         <Stack.Screen name="Blogs" component={BlogScreen} />
       </Stack.Navigator>

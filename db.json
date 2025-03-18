@@ -25,23 +25,51 @@
       "name": "THÁI",
       "email": "abc@gmail.com",
       "password": "123456",
-      "verified": true
+      "verified": true,
+      "userProfile": {
+        "dob": "2001-05-19",
+        "gender": "Male",
+        "avatar": "file:///data/user/0/host.exp.exponent/cache/ExperienceData/%2540anonymous%252FFitnessOnlineClone-29955d57-319d-4b22-bbcb-a8eddd4a677b/ImagePicker/73910158-34d1-4da3-8d93-3f3f43ce89d5.jpeg",
+        "bio": "Yêu thích tập gym, mong muốn có body săn chắc.",
+        "job": "Nhân viên văn phòng cua",
+        "fitnessGoal": "Giảm mỡ, tăng cơ bắp",
+        "age": 23,
+        "name": "THÁI"
+      }
     },
     {
       "id": "2",
       "name": "LONG",
       "email": "user2@gmail.com",
       "password": "654321",
-      "verified": true
+      "verified": true,
+      "userProfile": {
+        "age": 27,
+        "dob": "1997-10-22",
+        "gender": "Male",
+        "avatar": "",
+        "bio": "Đam mê thể thao, yêu thích yoga để thư giãn.",
+        "job": "Giáo viên",
+        "fitnessGoal": "Tăng sự linh hoạt, cải thiện sức khỏe tinh thần"
+      }
     },
     {
-      "id": "83ba",
+      "id": "3",
       "name": "Thaiii",
       "email": "nguyenthaigpt@gmail.com",
       "password": "123",
       "verified": true,
       "verificationCode": "340387",
-      "resetCode": null
+      "resetCode": null,
+      "userProfile": {
+        "age": 24,
+        "dob": "2001-02-18",
+        "gender": "Male",
+        "avatar": "",
+        "bio": "Chạy bộ mỗi sáng, rèn luyện sức bền.",
+        "job": "Sinh viên",
+        "fitnessGoal": "Cải thiện tốc độ chạy, nâng cao sức khỏe tim mạch"
+      }
     },
     {
       "id": "8484",
@@ -50,6 +78,32 @@
       "password": "123456",
       "verified": true,
       "verificationCode": "934084"
+    },
+    {
+      "id": "df24",
+      "name": "hoang",
+      "email": "zxc@gmail.com",
+      "password": "123456",
+      "verified": false,
+      "verificationCode": "794069"
+    },
+    {
+      "id": "07ec",
+      "name": "Hoang",
+      "email": "zxc1@gmail.com",
+      "password": "123456",
+      "verified": true,
+      "verificationCode": "875659",
+      "userProfile": {
+        "dob": "2002-10-07",
+        "gender": "",
+        "avatar": "",
+        "bio": "Thich the thao",
+        "job": "Sinh vien",
+        "fitnessGoal": "Bong da",
+        "age": 22,
+        "name": "Hoang"
+      }
     }
   ],
   "exercises": [
@@ -516,15 +570,15 @@
       "liftingWeight": null
     },
     {
-      "id": "c1f6",
+      "id": "cece",
       "userId": "1",
-      "date": "2025-03-16",
+      "date": "2025-03-17",
       "weight": 70,
-      "chest": null,
-      "waist": null,
-      "thigh": null,
+      "chest": 66,
+      "waist": 67,
+      "thigh": 68,
       "workoutTime": 60,
-      "liftingWeight": 20
+      "liftingWeight": 5
     }
   ],
   "workoutHistory": [
@@ -576,7 +630,7 @@
         },
         {
           "id": "8",
-          "completed": false,
+          "completed": true,
           "note": ""
         }
       ]
@@ -599,42 +653,52 @@
         },
         {
           "id": "7",
-          "completed": false,
+          "completed": true,
           "note": "Hhhh"
         },
         {
           "id": "5",
-          "completed": false,
-          "note": "Okeeee"
+          "completed": true,
+          "note": ""
         },
         {
           "id": "6",
-          "completed": false,
+          "completed": true,
           "note": "Yeahh"
         }
       ]
     },
     {
-      "id": "99c8",
+      "id": "4a70",
       "userId": "1",
       "date": "2025-03-15",
-      "workoutName": "Dumbbell Fly",
+      "workoutName": "Squat",
       "exercises": [
         {
-          "id": "11",
+          "id": "2",
           "completed": true,
-          "note": "Oke"
+          "note": ""
+        },
+        {
+          "id": "4",
+          "completed": true,
+          "note": ""
         }
       ]
     },
     {
-      "id": "c42e",
-      "userId": "2",
+      "id": "e41c",
+      "userId": "1",
       "date": "2025-03-16",
-      "workoutName": "Burpees",
+      "workoutName": "Push-up",
       "exercises": [
         {
-          "id": "14",
+          "id": "1",
+          "completed": true,
+          "note": "da tap xong"
+        },
+        {
+          "id": "3",
           "completed": true,
           "note": ""
         }
@@ -666,6 +730,19 @@
       "exercises": [
         {
           "id": "5",
+          "completed": true,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "81af",
+      "userId": "1",
+      "date": "2025-03-17",
+      "workoutName": "Push-up",
+      "exercises": [
+        {
+          "id": "1",
           "completed": true,
           "note": ""
         }
@@ -1235,152 +1312,17 @@
     }
   ],
   "blogs": [
-    {
-      "id": "1",
-      "userId": "1",
-      "title": "First Blog",
-      "content": "This is the first blog content.",
-      "imageUrl": "https://scontent.fhan14-4.fna.fbcdn.net/v/t39.30808-6/480208170_1335797421207679_1546409666488955229_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_ohc=h5m9XAgr1Y0Q7kNvgGJW_0o&_nc_oc=AdhDy1teB7a52QbAjQK62z1M6V6xiZxC0DGBQH01zwNL2QgTM4gbxny-pb5jGpOdo5s&_nc_zt=23&_nc_ht=scontent.fhan14-4.fna&_nc_gid=lB4u6sW2-s0EYyUVueTYvA&oh=00_AYHxG0iHcKHfcslr9ndxwQ1JH1vwKRNnRbg5JayFGJ4LDA&oe=67DCDA63",
-      "createdAt": "2025-03-16T10:00:00.000Z"
-    },
+    
     {
       "id": "2",
       "userId": "2",
-      "title": "Second Blog",
-      "content": "This is the second blog content.",
-      "imageUrl": "https://scontent.fhan14-4.fna.fbcdn.net/v/t39.30808-6/480208170_1335797421207679_1546409666488955229_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_ohc=h5m9XAgr1Y0Q7kNvgGJW_0o&_nc_oc=AdhDy1teB7a52QbAjQK62z1M6V6xiZxC0DGBQH01zwNL2QgTM4gbxny-pb5jGpOdo5s&_nc_zt=23&_nc_ht=scontent.fhan14-4.fna&_nc_gid=lB4u6sW2-s0EYyUVueTYvA&oh=00_AYHxG0iHcKHfcslr9ndxwQ1JH1vwKRNnRbg5JayFGJ4LDA&oe=67DCDA63",
+      "title": "Mọi người đang tập gym không?",
+      "content": "Tập gym 1 buổi chiều nắng",
+      "imageUrl": "https://everybody.org.uk/locations/everybody-alderley-park/gym-2",
       "createdAt": "2025-03-17T12:00:00.000Z"
-    },
-    {
-      "id": "3",
-      "userId": "2845",
-      "title": "Another Blog",
-      "content": "Another blog content from user123.",
-      "imageUrl": "https://scontent.fhan14-4.fna.fbcdn.net/v/t39.30808-6/480208170_1335797421207679_1546409666488955229_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_ohc=h5m9XAgr1Y0Q7kNvgGJW_0o&_nc_oc=AdhDy1teB7a52QbAjQK62z1M6V6xiZxC0DGBQH01zwNL2QgTM4gbxny-pb5jGpOdo5s&_nc_zt=23&_nc_ht=scontent.fhan14-4.fna&_nc_gid=lB4u6sW2-s0EYyUVueTYvA&oh=00_AYHxG0iHcKHfcslr9ndxwQ1JH1vwKRNnRbg5JayFGJ4LDA&oe=67DCDA63",
-      "createdAt": "2025-03-17T14:00:00.000Z"
     }
   ],
   "workoutSchedules": [
-    {
-      "id": "e60b",
-      "userId": "1",
-      "name": "Xin chào",
-      "time": "19:43",
-      "days": [
-        2
-      ]
-    },
-    {
-      "id": "6b09",
-      "userId": "1",
-      "name": "Xin chào",
-      "time": "19:43",
-      "days": [
-        2
-      ]
-    },
-    {
-      "id": "4369",
-      "userId": "1",
-      "name": "Tập thể Dục",
-      "time": "09:00",
-      "days": [
-        1,
-        2,
-        3
-      ]
-    },
-    {
-      "id": "c5fa",
-      "userId": "1",
-      "name": "Test",
-      "time": "20:46",
-      "days": [
-        2
-      ]
-    },
-    {
-      "id": "1d42",
-      "userId": "1",
-      "name": "Tessy",
-      "time": "20:46",
-      "days": [
-        0
-      ]
-    },
-    {
-      "id": "3b69",
-      "userId": "1",
-      "name": "T",
-      "time": "20:46",
-      "days": [
-        6
-      ]
-    },
-    {
-      "id": "4b71",
-      "userId": "1",
-      "name": "7",
-      "time": "20:46",
-      "days": [
-        5
-      ]
-    },
-    {
-      "id": "d15b",
-      "userId": "1",
-      "name": "Bao",
-      "time": "21:04",
-      "days": [
-        2
-      ]
-    },
-    {
-      "id": "d789",
-      "userId": "1",
-      "name": "Hello",
-      "time": "21:09",
-      "days": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ]
-    },
-    {
-      "id": "bc5b",
-      "userId": "1",
-      "name": "Hi",
-      "time": "21:20",
-      "days": [
-        0,
-        1
-      ]
-    },
-    {
-      "id": "2483",
-      "userId": "1",
-      "name": "Hi",
-      "time": "21:20",
-      "days": [
-        2
-      ]
-    },
-    {
-      "id": "e1ad",
-      "userId": "1",
-      "name": "Hi",
-      "time": "21:23",
-      "days": [
-        0,
-        1,
-        2,
-        3
-      ]
-    },
     {
       "id": "15a3",
       "userId": "1",
@@ -1524,6 +1466,24 @@
       "userId": "1",
       "name": "Xía đi",
       "time": "22:34",
+      "days": [
+        2
+      ]
+    },
+    {
+      "id": "421b",
+      "userId": "1",
+      "name": "Hello",
+      "time": "23:36",
+      "days": [
+        2
+      ]
+    },
+    {
+      "id": "fac4",
+      "userId": "1",
+      "name": "Team",
+      "time": "23:37",
       "days": [
         2
       ]

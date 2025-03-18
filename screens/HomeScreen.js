@@ -12,7 +12,7 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 import api from "../api";
 import { MaterialIcons } from "@expo/vector-icons";
 import BlogSection from "./blogs/components/BlogSection";
-
+import Icon from "react-native-vector-icons/FontAwesome";
 const HomeScreen = ({ navigation }) => {
   const [exercises, setExercises] = useState([]);
   const [workouts, setWorkouts] = useState([]);
@@ -40,11 +40,27 @@ const HomeScreen = ({ navigation }) => {
         <View style={styles.progressContainer}>
           <Text style={styles.sectionTitle}>Tiến trình của bạn</Text>
           <TouchableOpacity
+    style={{
+      position: "absolute",
+      top: 10,
+      right: 10,
+      padding: 5,
+      backgroundColor: "#1e90ff",
+      borderRadius: 5,
+      alignItems: "center",
+      justifyContent: "center",
+    }}
+    onPress={() => navigation.navigate("Profile", { userId: user.id })}
+  >
+    <Icon name="user" size={24} color="white" />
+  </TouchableOpacity>
+          <TouchableOpacity
             style={styles.progressButton}
             onPress={() => navigation.navigate("Progress", { userId: user?.id })}
           >
             <Text style={styles.progressButtonText}>Xem Tiến Trình</Text>
           </TouchableOpacity>
+
           <TouchableOpacity
             style={styles.progressButton}
             onPress={() => navigation.navigate("AddProgress", { userId: user?.id })}

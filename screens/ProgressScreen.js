@@ -6,12 +6,13 @@ import {
   StyleSheet,
   ActivityIndicator,
   Dimensions,
+  SafeAreaView,
 } from "react-native";
 import { LineChart } from "react-native-chart-kit";
 import api from "../api";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
-const screenWidth = Dimensions.get("window").width; // Lấy kích thước màn hình
+const screenWidth = Dimensions.get("window").width;
 
 const ProgressScreen = ({ route }) => {
   const [userId, setUserId] = useState(null);
@@ -46,33 +47,48 @@ const ProgressScreen = ({ route }) => {
     }
   }, [userId]);
 
-  if (loading) return <ActivityIndicator size="large" color="blue" />;
+  if (loading)
+    return (
+      <View style={styles.loadingContainer}>
+        <ActivityIndicator size="large" color="blue" />
+      </View>
+    );
+
   if (!progressData.length)
-    return <Text style={styles.noData}>Chưa có dữ liệu tiến trình</Text>;
+    return (
+      <View style={styles.loadingContainer}>
+        <Text style={styles.noData}>Chưa có dữ liệu tiến trình</Text>
+      </View>
+    );
 
   return (
-    <View style={styles.container}>
-      <ScrollView contentContainerStyle={styles.scrollContainer}>
+    <SafeAreaView style={styles.container}>
+      <ScrollView
+        contentContainerStyle={styles.scrollContainer}
+        showsVerticalScrollIndicator={false}
+        overScrollMode="never"
+      >
         <Text style={styles.title}>Tiến trình cá nhân</Text>
 
         {/* 🔹 Biểu đồ Cân nặng */}
         <View style={styles.chartContainer}>
           <Text style={styles.chartTitle}>Cân nặng theo ngày (kg)</Text>
-          <ScrollView horizontal showsHorizontalScrollIndicator={false}>
-            <View style={{ width: Math.max(400, screenWidth - 40) }}>
-              <LineChart
-                data={{
-                  labels: progressData.map((entry) => entry.date),
-                  datasets: [
-                    { data: progressData.map((entry) => entry.weight) },
-                  ],
-                }}
-                width={Math.max(400, screenWidth - 40)}
-                height={220}
-                chartConfig={chartConfig}
-                style={styles.chart}
-              />
-            </View>
+          <ScrollView
+            horizontal
+            showsHorizontalScrollIndicator={false}
+            contentContainerStyle={styles.horizontalScrollContainer}
+          >
+            <LineChart
+              data={{
+                labels: progressData.map((entry) => entry.date),
+                datasets: [{ data: progressData.map((entry) => entry.weight) }],
+              }}
+              width={Math.max(400, screenWidth - 40)}
+              height={220}
+              chartConfig={chartConfig}
+              style={styles.chart}
+              bezier
+            />
           </ScrollView>
         </View>
 
@@ -94,7 +110,7 @@ const ProgressScreen = ({ route }) => {
           </View>
         ))}
       </ScrollView>
-    </View>
+    </SafeAreaView>
   );
 };
 
@@ -110,27 +126,34 @@ const chartConfig = {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1, // 🔥 Đảm bảo View chính chiếm toàn bộ màn hình
+    flex: 1,
     backgroundColor: "#f8f9fa",
   },
+  loadingContainer: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+  },
   scrollContainer: {
-    flexGrow: 1, // 🔥 Đảm bảo nội dung chiếm toàn bộ không gian cuộn
-    padding: 20,
+    paddingHorizontal: 20,
+    paddingBottom: 20,
+  },
+  horizontalScrollContainer: {
+    paddingRight: 20, // Thêm padding để tránh nội dung bị cắt
   },
   title: {
     fontSize: 22,
     fontWeight: "bold",
     textAlign: "center",
+    marginTop: 20,
     marginBottom: 20,
   },
   chartContainer: {
-    alignItems: "center",
     marginBottom: 20,
   },
   chartTitle: {
     fontSize: 18,
     fontWeight: "bold",
-    textAlign: "center",
     marginBottom: 10,
   },
   chart: {
@@ -139,7 +162,7 @@ const styles = StyleSheet.create({
   listTitle: {
     fontSize: 20,
     fontWeight: "bold",
-    marginTop: 20,
+    marginTop: 10,
     marginBottom: 10,
   },
   progressCard: {
@@ -147,9 +170,12 @@ const styles = StyleSheet.create({
     padding: 15,
     marginBottom: 15,
     borderRadius: 10,
-    shadowColor: "#000",
+    // Thay đổi cách xử lý shadow
+    elevation: 3, // Cho Android
+    shadowColor: "#000", // Cho iOS
+    shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.1,
-    shadowRadius: 5,
+    shadowRadius: 3,
   },
   date: {
     fontSize: 16,

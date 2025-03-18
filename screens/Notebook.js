@@ -1,19 +1,26 @@
-import React, { useEffect, useState } from 'react';
-import { View, Text, FlatList, TouchableOpacity, ImageBackground, StyleSheet } from 'react-native';
+import React, { useEffect, useState } from "react";
+import {
+  View,
+  Text,
+  FlatList,
+  TouchableOpacity,
+  ImageBackground,
+  StyleSheet,
+} from "react-native";
 
 const Notebook = ({ navigation }) => {
   const [notebooks, setNotebooks] = useState([]);
 
   useEffect(() => {
-    fetch('http://192.168.1.18:3001/notebooks')
-      .then(response => response.json())
-      .then(data => setNotebooks(data))
-      .catch(error => console.error('Error fetching data:', error));
+    fetch("http://192.168.1.18:3001/notebooks")
+      .then((response) => response.json())
+      .then((data) => setNotebooks(data))
+      .catch((error) => console.error("Error fetching data:", error));
   }, []);
 
   const renderNotebook = ({ item }) => (
     <TouchableOpacity
-      onPress={() => navigation.navigate('NotebookDetail', { notebook: item })}
+      onPress={() => navigation.navigate("NotebookDetail", { notebook: item })}
       style={styles.cardContainer}
     >
       <ImageBackground
@@ -32,7 +39,7 @@ const Notebook = ({ navigation }) => {
     <View style={styles.container}>
       <FlatList
         data={notebooks}
-        keyExtractor={item => item.id.toString()}
+        keyExtractor={(item) => item.id.toString()}
         renderItem={renderNotebook}
       />
     </View>
@@ -43,27 +50,27 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 20,
-    backgroundColor: '#fff',
+    backgroundColor: "#fff",
   },
   cardContainer: {
     marginBottom: 20,
     borderRadius: 15,
-    overflow: 'hidden',
+    overflow: "hidden",
   },
   backgroundImage: {
     height: 200, // Tăng kích thước card
-    justifyContent: 'flex-end',
+    justifyContent: "flex-end",
   },
   textContainer: {
-    backgroundColor: 'rgba(0, 0, 0, 0.5)', // Mờ nền để chữ dễ đọc hơn
+    backgroundColor: "rgba(0, 0, 0, 0.5)", // Mờ nền để chữ dễ đọc hơn
     padding: 10,
     borderBottomLeftRadius: 15,
     borderBottomRightRadius: 15,
   },
   title: {
     fontSize: 22,
-    fontWeight: 'bold',
-    color: '#fff',
+    fontWeight: "bold",
+    color: "#fff",
   },
 });
 
